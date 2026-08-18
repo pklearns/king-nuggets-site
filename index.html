@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>King Nuggets — Independent Market Research</title>
+<meta name="description" content="A written record of where seven markets sit in their cycles. Hurst nominal set, Bressert timing bands, every count dated in advance and carrying the price or date that would break it.">
+<meta name="color-scheme" content="light">
+
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/kingnuggets.css">
+
+<!-- Fonts are self-hosted and gated behind font-display:swap. There are no
+     <link rel="preload"> hints here on purpose: a font preload must carry
+     crossorigin, which a browser refuses over file://, and this page is meant
+     to open correctly straight off disk. Once it is served over HTTP, adding
+     preloads for Switzer-Regular and Sentient-Regular is worth one round trip. -->
+
+<script src="data/cycles.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="page">
+
+  <!-- ====================================================================
+       Masthead. The wordmark is a wordmark, not a heading: Sentient,
+       uppercase, 0.16em tracking, descriptor at 0.24em.
+       ==================================================================== -->
+  <div class="site-head">
+    <header class="masthead">
+      <a class="wordmark" href="#top">
+        <span class="wordmark__name">King Nuggets</span>
+        <span class="wordmark__descriptor">Independent Market Research</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="#research">Research</a>
+        <a href="#methodology">Methodology</a>
+        <a href="#coverage">Coverage</a>
+        <a href="#">Lab</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-overlay">
+        Menu
+        <span class="nav-toggle__bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </header>
+
+    <nav class="tabstrip" aria-label="Sections">
+      <a href="#research">Research</a>
+      <a href="#methodology">Method</a>
+      <a href="#coverage">Coverage</a>
+      <a href="#">Lab</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+
+  <main id="main">
+
+    <!-- ==================================================================
+         Hero. One sentence on what King Nuggets is. No hype.
+         ================================================================== -->
+    <section class="hero" id="top">
+      <div class="hero__main">
+        <span class="hero__eyebrow">Independent · Cycle research</span>
+        <h1 class="hero__statement">A written record of where seven markets sit in their cycles.</h1>
+        <p class="hero__standfirst">Each issue dates the current nominal cycle for the instruments below, states the count, and shows the work. Where the count is uncertain, the letter says so.</p>
+        <div class="hero__actions">
+          <a class="btn-primary" href="#">Read the current letter</a>
+          <a class="link-underlined" href="#methodology">Methodology in full</a>
+        </div>
+      </div>
+
+      <div class="issue-rail d-only">
+        <span class="label">Current issue</span>
+        <div class="issue-rail__meta">
+          <span class="issue-rail__no">ISSUE NO. — · [DATE]</span>
+          <span class="issue-rail__headline">[Headline]</span>
+        </div>
+        <p class="issue-rail__standfirst">[Standfirst — two lines summarising the argument of the issue.]</p>
+        <a href="#">Continue reading →</a>
+      </div>
+    </section>
+
+    <!-- Current issue, mobile. The rail becomes its own band. -->
+    <section class="issue-band m-only" aria-label="Current issue">
+      <span class="issue-band__no">ISSUE NO. — · [DATE]</span>
+      <span class="issue-band__headline">[Headline]</span>
+      <a href="#">Continue reading →</a>
+    </section>
+
+    <!-- ==================================================================
+         01 — Methodology. The credibility engine; it gets real space.
+         ================================================================== -->
+    <section class="band band--methodology band--paper section-grid" id="methodology">
+      <div class="section-head">
+        <span class="label">01 — Methodology</span>
+        <h2 class="h2">How the counts are made</h2>
+        <p class="caption d-only">Hurst's principles of nominality and synchronicity, executed with Bressert's timing bands. CMT-informed, disclosed in full.</p>
+      </div>
+
+      <div class="method__body">
+        <p class="lead d-only">Every count in this letter descends from a single assumption: that price is the sum of a small number of nominal periodicities whose troughs synchronise, and that those periodicities are stable enough to be dated in advance and falsified in public.</p>
+        <p class="lead m-only">Every count descends from one assumption: that price is the sum of a small number of nominal periodicities whose troughs synchronise, and that those periodicities can be dated in advance and falsified in public.</p>
+
+        <div class="method-grid">
+          <div class="method-card">
+            <span class="method-card__id">01 / NOMINAL MODEL</span>
+            <h3>Hurst's nominal set, unmodified</h3>
+            <p class="d-only">The 18-year, 54-month, 18-month, 40-week, 20-week, 40-day and 20-day periodicities are used as published. No curve-fitted lengths, no proprietary "discovered" cycles. Where an instrument does not respect a nominal band, it is reported as not respecting it.</p>
+            <p class="m-only">Published periodicities used as published. No curve-fitted lengths, no proprietary "discovered" cycles.</p>
+          </div>
+
+          <div class="method-card">
+            <span class="method-card__id">02 / TIMING BANDS</span>
+            <h3>Bressert timing, stated as a window</h3>
+            <p class="d-only">Troughs are published as dated windows with a stated tolerance, never as a single day. A window that closes without a trough is recorded as a miss and carried forward in the accuracy log rather than quietly re-dated.</p>
+            <p class="m-only">Troughs are published as dated windows with a tolerance, never a single day. A window that closes empty is recorded as a miss.</p>
+          </div>
+
+          <div class="method-card">
+            <span class="method-card__id">03 / TRANSLATION</span>
+            <h3>Translation before conclusion</h3>
+            <p class="d-only">Right or left translation of the prior completed cycle is measured before any statement about the next one. Translation is the only directional inference the letter draws from cycle structure; everything else is timing.</p>
+            <p class="m-only">The only directional inference drawn from cycle structure. Everything else in the letter is timing.</p>
+          </div>
+
+          <div class="method-card">
+            <span class="method-card__id">04 / FALSIFICATION</span>
+            <h3>Each count carries its invalidation</h3>
+            <p class="d-only">No count is published without the price or date that would break it. When a count breaks, the following issue opens with the break rather than burying it. The letter contains no signals, no entries, and no exits.</p>
+            <p class="m-only">No count is published without the price or date that would break it. Breaks open the next issue.</p>
+          </div>
+        </div>
+
+        <!-- Structural figures. Nothing here is a track record. -->
+        <div class="figures">
+          <div class="figure">
+            <span class="figure__value">7</span>
+            <span class="figure__label d-only">Instruments counted, and no more</span>
+            <span class="figure__label m-only">Instruments</span>
+          </div>
+          <div class="figure">
+            <span class="figure__value">0</span>
+            <span class="figure__label d-only">Trade recommendations issued</span>
+            <span class="figure__label m-only">Recommendations</span>
+          </div>
+          <div class="figure">
+            <span class="figure__value">1</span>
+            <span class="figure__label d-only">Author, named, writing in public</span>
+            <span class="figure__label m-only">Named author</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         02 — Coverage
+         ================================================================== -->
+    <section class="band band--coverage" id="coverage">
+      <div class="band-head">
+        <div class="section-head">
+          <span class="label">02 — Coverage</span>
+          <h2 class="h2">Seven instruments, counted every week</h2>
+        </div>
+        <p class="band-head__note">Coverage is deliberately narrow. Each instrument has a documented nominal set and a count maintained without gaps.</p>
+      </div>
+
+      <div class="coverage-grid">
+        <article class="instrument">
+          <span class="instrument__symbol">SPX</span>
+          <span class="instrument__name">S&amp;P 500 Index</span>
+          <span class="instrument__note">Primary nominal set. Cleanest 20-week structure of the seven.</span>
+          <span class="instrument__set">40D · 20W · 40W · 18M</span>
+        </article>
+
+        <article class="instrument">
+          <span class="instrument__symbol">NDX</span>
+          <span class="instrument__name">Nasdaq 100 Index</span>
+          <span class="instrument__note">Tracks SPX at the 40-week; diverges materially at the 40-day.</span>
+          <span class="instrument__set">40D · 20W · 40W</span>
+        </article>
+
+        <article class="instrument">
+          <span class="instrument__symbol">GC</span>
+          <span class="instrument__name">Gold, continuous</span>
+          <span class="instrument__note">Strong 18-month periodicity; 20-week count carried with tolerance.</span>
+          <span class="instrument__set">20W · 40W · 18M · 54M</span>
+        </article>
+
+        <article class="instrument">
+          <span class="instrument__symbol">SI</span>
+          <span class="instrument__name">Silver, continuous</span>
+          <span class="instrument__note">Synchronises with gold at the 18-month, not reliably below it.</span>
+          <span class="instrument__set">20W · 40W · 18M</span>
+        </article>
+
+        <article class="instrument">
+          <span class="instrument__symbol">DXY</span>
+          <span class="instrument__name">US Dollar Index</span>
+          <span class="instrument__note">Used chiefly as a cross-check on the metals counts.</span>
+          <span class="instrument__set">20W · 40W · 18M</span>
+        </article>
+
+        <article class="instrument">
+          <span class="instrument__symbol">CL</span>
+          <span class="instrument__name">WTI Crude Oil</span>
+          <span class="instrument__note">Event-prone. Counts published with the widest tolerance of the seven.</span>
+          <span class="instrument__set">40D · 20W · 40W</span>
+        </article>
+
+        <article class="instrument">
+          <span class="instrument__symbol">TNX</span>
+          <span class="instrument__name">US 10-Year Yield</span>
+          <span class="instrument__note">Counted on yield, not price. The 54-month structure dominates.</span>
+          <span class="instrument__set">40W · 18M · 54M</span>
+        </article>
+
+        <!-- The eighth cell holds the note rather than an eighth instrument. -->
+        <div class="instrument instrument--note">
+          <span class="instrument__note">
+            <span class="d-only">Instruments are added only when the data supports a documented nominal set. None are planned.</span>
+            <span class="m-only">Coverage is deliberately narrow. None planned.</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         03 — Cycle Dashboard
+
+         One structure, three states. Which one renders is decided by
+         data/cycles.js, or by ?state=live|stale|prelaunch for review.
+         Every element carrying state-specific copy is marked
+         data-state-block so the words stay here rather than in the script.
+         ================================================================== -->
+    <section class="band band--dashboard band--paper" id="cycle-dashboard" data-state="live">
+      <div class="dash-head">
+        <div class="section-head">
+          <span class="label">03 — Cycle Dashboard</span>
+          <h2 class="h2" data-state-block="live">Where each instrument stands today</h2>
+          <h2 class="h2" data-state-block="stale">Counts withheld this week</h2>
+          <h2 class="h2" data-state-block="prelaunch">In preparation</h2>
+        </div>
+
+        <div class="dash-head__state">
+          <span class="token" data-state-block="live">SAMPLE — ILLUSTRATIVE</span>
+          <span class="dash-head__note" data-state-block="live">Cycle age is elapsed time, not a forecast.</span>
+
+          <span class="token" data-state-block="stale">ANCHORS AS OF [DATE]</span>
+          <span class="dash-head__note" data-state-block="stale">Last verified against settlement data.</span>
+
+          <span class="token" data-state-block="prelaunch">OPENS [DATE]</span>
+          <span class="dash-head__note" data-state-block="prelaunch">Structure shown; values follow.</span>
+        </div>
+      </div>
+
+      <!-- ---- Notice plates, desktop ---------------------------------- -->
+
+        <!-- State B. Withholding is a stated editorial decision, not an
+             error: no warning colour, no icon, and the reason is given. -->
+        <div class="notice notice--stale d-only" data-state-block="stale">
+          <div class="notice__main">
+            <span class="notice__label">Cycle counts unavailable</span>
+            <p class="notice__statement">The data behind the cycle ages has not reconciled against settlement since [DATE]. Rather than publish ages that may be a day or two out, the dashboard shows the anchors and stops there.</p>
+            <p class="notice__detail">Anchors — the dated troughs each count runs from — are unchanged and shown below. Nominal lengths are unchanged. Only the arithmetic between them is withheld, and it returns when the reconciliation does.</p>
+          </div>
+          <div class="notice__side">
+            <div class="notice__row"><span>Anchors as of</span><span class="notice__value">[DATE]</span></div>
+            <div class="notice__row"><span>Counts last published</span><span class="notice__value">ISSUE NO. —</span></div>
+            <div class="notice__row"><span>Expected return</span><span class="notice__value">NEXT ISSUE</span></div>
+            <span class="notice__aside">Withholding is recorded the same way a missed window is.</span>
+          </div>
+        </div>
+
+        <!-- State C. Pre-launch reads as preparation, not as unfinished. -->
+        <div class="notice notice--prelaunch d-only" data-state-block="prelaunch">
+          <div class="notice__main">
+            <span class="notice__label">Opens [DATE]</span>
+            <p class="notice__statement">The table goes live once the reconciliation runs automatically every morning — not before.</p>
+            <p class="notice__detail">A dashboard that is right four days a week is worse than no dashboard. Until it is right seven, the letter carries the counts and this page carries the structure.</p>
+          </div>
+          <div class="notice__side">
+            <span class="label">What it will show</span>
+            <div class="notice__list">
+              <span>Cycle age against each nominal length</span>
+              <span>The dated anchor each count runs from</span>
+              <span>Translation of the last completed cycle</span>
+              <span>The next trough window and its tolerance</span>
+            </div>
+            <a href="#subscribe">Get the letter until then →</a>
+          </div>
+        </div>
+
+        <!-- ---- Notice plates, mobile --------------------------------- -->
+
+        <div class="notice-mobile notice-mobile--stale m-only" data-state-block="stale">
+          <span class="notice-mobile__label">Cycle counts unavailable</span>
+          <p class="notice-mobile__statement">The data behind the cycle ages has not reconciled against settlement since [DATE]. Rather than publish ages that may be a day or two out, the dashboard shows the anchors and stops there.</p>
+          <div class="notice-mobile__row"><span>Expected return</span><span class="notice__value">NEXT ISSUE</span></div>
+        </div>
+
+        <div class="notice-mobile notice-mobile--prelaunch m-only" data-state-block="prelaunch">
+          <span class="notice-mobile__label">Opens [DATE]</span>
+          <p class="notice-mobile__statement">The table goes live once the reconciliation runs automatically every morning — not before. A dashboard that is right four days a week is worse than no dashboard.</p>
+          <a href="#subscribe">Get the letter until then →</a>
+        </div>
+
+        <!-- ---- Table, desktop ---------------------------------------- -->
+
+        <div class="d-only">
+          <div class="cycle-table-scroll">
+            <div class="cycle-table" role="table" aria-label="Cycle dashboard">
+              <div class="cycle-row cycle-row--head" role="row">
+                <span role="columnheader">Instrument</span>
+                <span role="columnheader">Nominal</span>
+                <span role="columnheader">
+                  <span data-state-block="live">Cycle age</span>
+                  <span data-state-block="stale prelaunch">Cycle age — not published</span>
+                </span>
+                <span role="columnheader">Anchor trough</span>
+                <span role="columnheader">Next window</span>
+                <span role="columnheader">Reading</span>
+              </div>
+              <!-- Rows are rendered from data/cycles.js -->
+            </div>
+          </div>
+
+          <div class="cycle-foot">
+            <div class="cycle-legend">
+              <span><span class="cycle-legend__swatch" aria-hidden="true"></span>Elapsed against nominal</span>
+              <span><span class="cycle-legend__mono">RT / LT</span>Translation of last completed cycle</span>
+              <span>Window bound not plotted — tolerance differs by instrument</span>
+            </div>
+            <p class="cycle-footnote" data-state-block="live">Sample values, illustrative only. Ages are calendar-dated from the anchor trough and reconciled against settlement each morning.</p>
+            <p class="cycle-footnote" data-state-block="stale">Anchors are unchanged and verifiable from the dated letters in which they were first published.</p>
+            <p class="cycle-footnote" data-state-block="prelaunch">The same table, populated, ships when the dashboard opens.</p>
+          </div>
+        </div>
+
+        <!-- ---- Cards, mobile ----------------------------------------- -->
+
+        <div class="cycle-cards m-only">
+          <!-- Cards are rendered from data/cycles.js -->
+          <p class="cycle-cards__footnote" data-state-block="live">Sample values, illustrative only. Ages are calendar-dated from the anchor trough.</p>
+          <p class="cycle-cards__footnote" data-state-block="stale">Anchors are unchanged and verifiable from the dated letters in which they were published.</p>
+          <p class="cycle-cards__footnote" data-state-block="prelaunch">The same cards, populated, ship when the dashboard opens.</p>
+        </div>
+    </section>
+
+    <!-- ==================================================================
+         04 — Research
+         ================================================================== -->
+    <section class="band band--research section-grid" id="research">
+      <div class="section-head">
+        <span class="label">04 — Research</span>
+        <h2 class="h2">Recent letters</h2>
+        <p class="caption d-only">Published on Substack. This list is pulled from the feed; slots below are placeholders.</p>
+        <a class="d-only" href="#">Full archive →</a>
+      </div>
+
+      <div>
+        <div class="letters">
+          <a class="letter" href="#">
+            <span class="letter__meta">
+              <span class="letter__date">[DATE]</span>
+              <span class="letter__no">ISSUE NO. —</span>
+            </span>
+            <span class="letter__body">
+              <span class="letter__headline">[Headline]</span>
+              <span class="letter__standfirst">[Standfirst — one or two lines drawn from the letter's opening.]</span>
+            </span>
+            <span class="letter__instruments">[INSTRUMENTS]</span>
+          </a>
+
+          <a class="letter" href="#">
+            <span class="letter__meta">
+              <span class="letter__date">[DATE]</span>
+              <span class="letter__no">ISSUE NO. —</span>
+            </span>
+            <span class="letter__body">
+              <span class="letter__headline">[Headline]</span>
+              <span class="letter__standfirst">[Standfirst — one or two lines drawn from the letter's opening.]</span>
+            </span>
+            <span class="letter__instruments">[INSTRUMENTS]</span>
+          </a>
+
+          <a class="letter" href="#">
+            <span class="letter__meta">
+              <span class="letter__date">[DATE]</span>
+              <span class="letter__no">ISSUE NO. —</span>
+            </span>
+            <span class="letter__body">
+              <span class="letter__headline">[Headline]</span>
+              <span class="letter__standfirst">[Standfirst — one or two lines drawn from the letter's opening.]</span>
+            </span>
+            <span class="letter__instruments">[INSTRUMENTS]</span>
+          </a>
+
+          <a class="letter" href="#">
+            <span class="letter__meta">
+              <span class="letter__date">[DATE]</span>
+              <span class="letter__no">ISSUE NO. —</span>
+            </span>
+            <span class="letter__body">
+              <span class="letter__headline">[Headline]</span>
+              <span class="letter__standfirst">[Standfirst — one or two lines drawn from the letter's opening.]</span>
+            </span>
+            <span class="letter__instruments">[INSTRUMENTS]</span>
+          </a>
+        </div>
+
+        <a class="archive-link m-only" href="#">Full archive →</a>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         05 — Subscribe. Free tier now. Nothing is priced or dated.
+         ================================================================== -->
+    <section class="subscribe" id="subscribe">
+      <div class="subscribe__main">
+        <span class="label">05 — Subscribe</span>
+        <h2 class="subscribe__h2">The letter arrives by email, free.</h2>
+        <p class="subscribe__standfirst">The weekly letter and the published counts. No sequences, no upsell mail<span class="d-only">, no referral programme</span>.</p>
+
+        <form class="subscribe-form" id="subscribe-form" novalidate>
+          <label class="visually-hidden" for="subscribe-email">Email address</label>
+          <input id="subscribe-email" type="email" name="email" placeholder="you@firm.com" autocomplete="email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+
+        <p class="subscribe__status" id="subscribe-status" role="status" aria-live="polite"></p>
+        <span class="subscribe__note d-only">Delivered by Substack. One email a week. Unsubscribe in one click.</span>
+      </div>
+
+      <div class="subscribe__aside">
+        <span class="label d-only">What the free tier includes</span>
+
+        <div class="tier-list">
+          <div class="tier-row">
+            <span>The weekly letter</span>
+            <span class="tier-row__value">INCLUDED</span>
+          </div>
+          <div class="tier-row">
+            <span>Published cycle counts</span>
+            <span class="tier-row__value">INCLUDED</span>
+          </div>
+          <div class="tier-row">
+            <span>
+              <span class="d-only">The dated invalidation for each count</span>
+              <span class="m-only">Dated invalidation per count</span>
+            </span>
+            <span class="tier-row__value">INCLUDED</span>
+          </div>
+          <div class="tier-row d-only">
+            <span>Hit-or-miss record when a window closes</span>
+            <span class="tier-row__value">INCLUDED</span>
+          </div>
+        </div>
+
+        <p class="subscribe__paid d-only">A paid tier may follow. It is not being sold, priced, or dated here.</p>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         06 — About. One credential, a method claim, and a disclaimer
+         treated as a designed element with real hierarchy.
+         ================================================================== -->
+    <section class="band band--about section-grid" id="about">
+      <div class="section-head">
+        <span class="label">06 — About</span>
+        <h2 class="h2">Who writes it</h2>
+      </div>
+
+      <div class="about__body">
+        <div class="about__top">
+          <div class="about__claim">
+            <p class="lead">King Nuggets is written by one person, under their own name, and the method is the whole of the claim.</p>
+            <p class="prose d-only">Every count is dated in advance and published carrying the price or date that would break it. When a window closes it is recorded as a hit or a miss, whichever it was, and that record stands. The letter contains no signals, no entries, and no exits.</p>
+            <p class="prose m-only">Every count is dated in advance and published carrying the price or date that would break it. When a window closes it is recorded as a hit or a miss, whichever it was. No signals, no entries, no exits.</p>
+          </div>
+
+          <div class="credential">
+            <span class="label">Credential</span>
+            <div class="credential__row">
+              <span class="credential__abbr">CMT</span>
+              <span class="credential__name">Chartered Market Technician</span>
+            </div>
+            <div class="credential__note">King Nuggets is not a registered investment adviser.</div>
+          </div>
+        </div>
+
+        <div class="disclaimer">
+          <div class="disclaimer__head">
+            <span class="disclaimer__title">Disclaimer</span>
+            <span class="disclaimer__standfirst d-only">Read this before subscribing. It is the shortest honest version.</span>
+          </div>
+
+          <div class="disclaimer__grid">
+            <div class="disclaimer__item">
+              <span class="disclaimer__id">01 / NOT ADVICE</span>
+              <p class="d-only">King Nuggets publishes research, not investment advice. Nothing here is a recommendation to buy or sell any security, and no communication constitutes an advisory relationship.</p>
+              <p class="m-only">Research, not investment advice. Nothing here is a recommendation to buy or sell any security.</p>
+            </div>
+
+            <div class="disclaimer__item">
+              <span class="disclaimer__id">02 / CYCLES FAIL</span>
+              <p class="d-only">Cycle analysis is probabilistic and frequently wrong. Nominal periodicities drift, invert, and disappear. A published window is an expectation, not an outcome.</p>
+              <p class="m-only">Cycle analysis is probabilistic and frequently wrong. A published window is an expectation, not an outcome.</p>
+            </div>
+
+            <div class="disclaimer__item">
+              <span class="disclaimer__id">03 / NO PERFORMANCE</span>
+              <p class="d-only">No returns are claimed, shown, or implied anywhere in this publication. The record covers timing only, and past timing accuracy does not predict future accuracy.</p>
+              <p class="m-only">No returns are claimed, shown, or implied. The record covers timing only.</p>
+            </div>
+
+            <div class="disclaimer__item">
+              <span class="disclaimer__id">04 / YOUR RISK</span>
+              <p class="d-only">You are solely responsible for your own decisions and any losses arising from them. Consider your circumstances, and consult a licensed professional where appropriate.</p>
+              <p class="m-only">You are solely responsible for your own decisions and any losses arising from them.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wordmark">
+      <span class="wordmark__name">King Nuggets</span>
+      <span class="wordmark__descriptor">Independent Market Research</span>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer">
+      <a href="#">Substack</a>
+      <a href="#">Record</a>
+      <a href="#">Contact</a>
+      <a class="d-only" href="#">Terms</a>
+    </nav>
+
+    <span class="site-footer__copyright">© KING NUGGETS</span>
+  </footer>
+
+</div>
+
+<!-- ======================================================================
+     Full-screen navigation, mobile. Opened by the Menu button.
+     ====================================================================== -->
+<div class="nav-overlay" id="nav-overlay" hidden>
+  <div class="nav-overlay__head">
+    <div class="wordmark">
+      <span class="wordmark__name">King Nuggets</span>
+      <span class="wordmark__descriptor">Independent Market Research</span>
+    </div>
+    <button class="nav-overlay__close" type="button">Close</button>
+  </div>
+
+  <nav class="nav-overlay__list" aria-label="Primary">
+    <a href="#research"><span class="nav-overlay__item">Research</span><span class="nav-overlay__num">01</span></a>
+    <a href="#methodology"><span class="nav-overlay__item">Methodology</span><span class="nav-overlay__num">02</span></a>
+    <a href="#coverage"><span class="nav-overlay__item">Coverage</span><span class="nav-overlay__num">03</span></a>
+    <a href="#"><span class="nav-overlay__item">Lab</span><span class="nav-overlay__num">04</span></a>
+    <a href="#about"><span class="nav-overlay__item">About</span><span class="nav-overlay__num">05</span></a>
+  </nav>
+
+  <div class="nav-overlay__foot">
+    <span class="label">Current issue</span>
+    <span class="nav-overlay__issue">ISSUE NO. — · [DATE]</span>
+    <a class="nav-overlay__cta" href="#subscribe">Subscribe by email</a>
+  </div>
+</div>
+
+</body>
+</html>
