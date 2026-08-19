@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="lab">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archive — King Nuggets Lab</title>
+<meta name="description" content="The archive is append-only. Nothing published there is edited later, and the rules are checkable by anyone without taking King Nuggets at its word.">
+<meta name="color-scheme" content="dark">
+
+<link rel="stylesheet" href="../../assets/css/lab.css">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="shell site-head__inner">
+    <div class="wordmark">
+      <span class="wordmark__name">King&nbsp;Nuggets</span>
+      <span class="wordmark__bar" aria-hidden="true"></span>
+      <span class="wordmark__tag">Lab</span>
+    </div>
+    <div class="site-head__aside">
+      <a class="site-head__home" href="https://kingnuggets.com">kingnuggets.com&nbsp;↗</a>
+    </div>
+  </div>
+</header>
+
+<nav class="secnav" aria-label="Lab sections">
+  <div class="shell secnav__inner">
+    <a href="../"><span class="secnav__num">01</span><span>Index</span></a>
+    <a href="../status/"><span class="secnav__num">02</span><span>Status</span></a>
+    <a href="../article/"><span class="secnav__num">03</span><span>Article</span></a>
+    <a href="./" aria-current="page"><span class="secnav__num">04</span><span>Archive</span></a>
+    <a href="../dashboard/"><span class="secnav__num">05</span><span>Dashboard</span></a>
+  </div>
+</nav>
+
+<main class="shell page-main" id="main">
+
+  <section class="plain-head">
+    <div class="sect-id">§ 04 — Archive</div>
+    <h1 class="page-title">The archive is append-only. Nothing published here is edited later.</h1>
+    <p class="lede">Every entry in the Lab is backed by a package in a public repository. The rules below exist so that a reader can check any past claim against what was actually run at the time, rather than against a corrected version of it.</p>
+  </section>
+
+  <section class="explain">
+    <div>
+      <div class="explain__item">
+        <div class="explain__head">
+          <span class="explain__num">01</span>
+          <h2 class="explain__title">What a package is</h2>
+        </div>
+        <p>A package is the full set of files behind one entry: the code that produced a result, the inputs it read, the output it printed, and a note recording when it ran. It is committed as one unit, so the entry and its evidence cannot drift apart.</p>
+      </div>
+
+      <div class="explain__item">
+        <div class="explain__head">
+          <span class="explain__num">02</span>
+          <h2 class="explain__title">Why it is never edited</h2>
+        </div>
+        <p>Once a package is published it stays as it was. When something in it turns out to be wrong, the correction is added as a new package that refers back to the old one; the original stays readable.</p>
+        <p>This makes a bad call permanently visible. That is the point of it.</p>
+      </div>
+
+      <div class="explain__item">
+        <div class="explain__head">
+          <span class="explain__num">03</span>
+          <h2 class="explain__title">What a signed commit means for you</h2>
+        </div>
+        <p>Commits after the initial scaffold are signed. The scaffold commit is not, and GitHub shows it as unsigned. That is the mechanism working, not an exception to it. You are not asked to trust a claim about who wrote something; you can check it.</p>
+      </div>
+
+      <div class="explain__item explain__item--last">
+        <div class="explain__head">
+          <span class="explain__num">04</span>
+          <h2 class="explain__title">What force-push protection means for you</h2>
+        </div>
+        <p>History cannot be rewritten. A published commit cannot be quietly replaced with a different one under the same name, and nothing can be removed from the record after the fact. New commits can only be added on top.</p>
+      </div>
+
+      <div class="explain__foot">
+        <a class="btn" href="https://github.com/pklearns/king-nuggets-lab">Open repository ↗</a>
+      </div>
+    </div>
+
+    <aside class="selfcheck" aria-labelledby="selfcheck-heading">
+      <h2 class="selfcheck__label" id="selfcheck-heading">How to check this yourself</h2>
+      <ul class="selfcheck__list">
+        <li>
+          <p class="selfcheck__step">Open any commit in the archive and look for the Verified badge.</p>
+          <p class="selfcheck__detail">One click, no tooling, and it is GitHub attesting rather than King Nuggets.</p>
+        </li>
+        <li>
+          <p class="selfcheck__step">Read the repository's public ruleset.</p>
+          <p class="selfcheck__detail">The ruleset is named <code>main-append-only</code> and its terms are published by GitHub, not restated here.</p>
+          <a class="selfcheck__link" href="https://github.com/pklearns/king-nuggets-lab/rules">github.com/pklearns/king-nuggets-lab/rules ↗</a>
+        </li>
+      </ul>
+    </aside>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="shell site-foot__inner">
+    <div class="site-foot__mark">
+      <span class="site-foot__name">King Nuggets</span>
+      <span class="site-foot__sub">/ Lab</span>
+    </div>
+    <div class="site-foot__meta">
+      <span>Updated [DATE]</span>
+      <a href="https://kingnuggets.com">kingnuggets.com ↗</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
