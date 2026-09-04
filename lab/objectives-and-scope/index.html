@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="lab">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Objectives and Scope — King Nuggets Lab</title>
+<meta name="description" content="What the Lab covers, what it excludes, and the provenance rules every entry on the register has to meet.">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="dark">
+
+<link rel="stylesheet" href="../../assets/css/lab.css">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="shell site-head__inner">
+    <div class="wordmark">
+      <span class="wordmark__name">King&nbsp;Nuggets</span>
+      <span class="wordmark__bar" aria-hidden="true"></span>
+      <span class="wordmark__tag">Lab</span>
+    </div>
+    <div class="site-head__aside">
+      <a class="site-head__home" href="https://kingnuggets.com">kingnuggets.com&nbsp;↗</a>
+    </div>
+  </div>
+</header>
+
+<nav class="secnav" aria-label="Lab sections">
+  <div class="shell secnav__inner">
+    <a href="../"><span class="secnav__num">01</span><span>Index</span></a>
+    <a href="../status/"><span class="secnav__num">02</span><span>Status</span></a>
+    <a href="../article/"><span class="secnav__num">03</span><span>Article</span></a>
+    <a href="../archive/"><span class="secnav__num">04</span><span>Archive</span></a>
+    <a href="../dashboard/"><span class="secnav__num">05</span><span>Dashboard</span></a>
+    <a href="./" aria-current="page"><span class="secnav__num">06</span><span>Objectives and Scope</span></a>
+  </div>
+</nav>
+
+<main class="shell page-main" id="main">
+  <article>
+
+    <header class="article__head">
+      <div class="article__meta">
+        <span>§ 06 — Objectives and Scope</span>
+        <span>2026-09-04</span>
+      </div>
+      <h1 class="article__title">Objectives and Scope</h1>
+    </header>
+
+    <div class="article__body">
+      <div class="prose">
+
+        <h2 id="what-the-lab-is"><span class="h-num">01</span><span>What the Lab is</span></h2>
+        <p>The Lab is the public record of the research I run. Every study, every methodology decision, and every result that came back empty gets committed here with a date, in a repository where commits are signed and history cannot be rewritten.</p>
+        <p>The subject varies. The record discipline does not. That is the whole idea.</p>
+
+        <h2 id="why-the-record-comes-first"><span class="h-num">02</span><span>Why the record comes first</span></h2>
+        <p>In March 2026 I identified an intermediate cycle low in gold. In June, price undercut it by 156 points, which meant the March low had failed. I retired it and anchored the intermediate cycle low to 6/30/26.</p>
+        <p>Both entries survive. The failed call sits next to the correction, dated, in a repository I cannot quietly edit. That is why I built the archive before building an audience. Analysis that can be revised after the fact tells you nothing about the analyst.</p>
+
+        <h2 id="what-the-lab-covers"><span class="h-num">03</span><span>What the Lab covers</span></h2>
+        <p>Any study I decide is worth testing. Cycle timing is the spine of my published weekly read, and it is not the boundary of the work.</p>
+        <p>Entries here have covered pattern detection across a wide equity universe, relative strength ranking, positioning studies, and engines I specified and then set down. Trading strategies I am testing belong here too, at whatever stage they are at, including the stage where the answer is still unknown.</p>
+        <p>A study earns a place by how it is recorded, not by what it is about. The requirements are the ones below under provenance: a question stated before the run, parameters frozen where the study is pre-registered, data from a feed I can name, and the result published whether or not it came back positive.</p>
+
+        <h2 id="work-that-is-parked"><span class="h-num">04</span><span>Work that is parked</span></h2>
+        <p>Some entries describe work that is specified and not yet run, or was running and now sits idle. Those stay listed with their real status rather than being removed.</p>
+        <p>A study I specified two years ago and never executed is a fact about my research, and hiding it would make the register a highlight reel. Some of that work gets renewed attention when I have more time for it. Some does not. The register says which is which today and does not promise what happens next.</p>
+
+        <h2 id="the-one-thing-i-do-not-carry-across"><span class="h-num">05</span><span>The one thing I do not carry across</span></h2>
+        <p>Where a study runs outside gold, the S&amp;P, and the dollar index, the entry says so.</p>
+        <p>Those three are the instruments I run cycle counts on. Silver, GDX, and GDXJ appear in the cycle work as lead and lag inputs to the gold read, and I do not run independent daily counts on them, because they do not have independent cycles.</p>
+        <p>A result on a broad equity universe is not evidence about gold's cycle. I publish both and I do not let one become support for the other.</p>
+
+        <h2 id="kinds-of-entry"><span class="h-num">06</span><span>Kinds of entry</span></h2>
+        <p><strong>Studies.</strong> A question, the parameters, the run, and the result. Pre-registration precedes any forward return computation. A commitment with no dated artifact behind it is not a pre-registration, and I do not treat it as one.</p>
+        <p><strong>Methodology entries.</strong> Every ambiguity that had to be resolved to make a method mechanical, with the decision and the reasoning attached. Turning a described pattern into code forces choices that most published descriptions leave open. Those choices are the substance of the work.</p>
+        <p><strong>Null results.</strong> Studies that returned nothing, published on the same footing as studies that returned something, and labeled for what they were. An exploratory study that found nothing is recorded as exploratory. It does not get promoted to a pre-registered result after the fact, because that is not a thing that can happen.</p>
+
+        <h2 id="status-vocabulary"><span class="h-num">07</span><span>Status vocabulary</span></h2>
+        <p>Every entry carries a status and a state-as-of date. No estimated completion dates, no percentages. The status definitions live in <code>LAB_STATUS.md</code> and govern every entry on the register.</p>
+        <p>A status describes where the work stands today. It does not promise where the work goes next.</p>
+
+        <h2 id="provenance-rules"><span class="h-num">08</span><span>Provenance rules</span></h2>
+        <p>Published prices come from my verified feed. I do not source a price from a search result or a scraped page, and no automated layer asserts one.</p>
+        <p>No language model writes the read. Automated output covers mechanical facts: cycle day count with the unit stated, RSI-3M3 value and state, price against the 10-week moving average, dollar position in its own count, positioning numbers with the trader category named. The interpretation is mine and carries my name.</p>
+        <p>Where a method has a blind spot, I document the blind spot rather than paper over it. CFTC positioning cannot see sovereign physical accumulation moving through Shanghai or over the counter. That gap stays stated in every entry where it matters.</p>
+
+        <h2 id="out-of-scope"><span class="h-num">09</span><span>Out of scope</span></h2>
+        <p>The Lab does not carry trade signals, entry and exit levels, or position sizing. Studying whether a strategy works is research. Telling you to take it is not something I do here.</p>
+
+        <h2 id="how-to-read-an-entry"><span class="h-num">10</span><span>How to read an entry</span></h2>
+        <p>Start with the status and the state-as-of date. Read the question before the result. Where a study is pre-registered, the pre-registration is linked and dated earlier than the run, and you can check that.</p>
+        <p>If a result changed after publication, the change is a new dated entry rather than an edit. Nothing here is revised in place.</p>
+
+        <p><em>King Nuggets is a publication of Bay Miles Group LLC. Research, not investment advice.</em></p>
+      </div>
+
+      <aside class="contents" aria-label="Contents">
+        <div class="contents__label">Contents</div>
+        <ul class="contents__list">
+          <li><a class="is-current" href="#what-the-lab-is">01 — What the Lab is</a></li>
+          <li><a href="#why-the-record-comes-first">02 — Why the record comes first</a></li>
+          <li><a href="#what-the-lab-covers">03 — What the Lab covers</a></li>
+          <li><a href="#work-that-is-parked">04 — Work that is parked</a></li>
+          <li><a href="#the-one-thing-i-do-not-carry-across">05 — The one thing I do not carry across</a></li>
+          <li><a href="#kinds-of-entry">06 — Kinds of entry</a></li>
+          <li><a href="#status-vocabulary">07 — Status vocabulary</a></li>
+          <li><a href="#provenance-rules">08 — Provenance rules</a></li>
+          <li><a href="#out-of-scope">09 — Out of scope</a></li>
+          <li><a href="#how-to-read-an-entry">10 — How to read an entry</a></li>
+        </ul>
+      </aside>
+    </div>
+
+  </article>
+</main>
+
+<footer class="site-foot">
+  <div class="shell site-foot__inner">
+    <div class="site-foot__mark">
+      <span class="site-foot__name">King Nuggets</span>
+      <span class="site-foot__sub">/ Lab</span>
+    </div>
+    <div class="site-foot__meta">
+      <span>Updated [DATE]</span>
+      <a href="https://kingnuggets.com">kingnuggets.com ↗</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
