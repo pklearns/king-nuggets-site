@@ -110,6 +110,7 @@
 
    Colour is not a carrier of meaning here. Direction is never encoded in hue,
    and state on the status board is set by glyph, weight and indent alone.
+   Exception: .board__step colour classes on the Ratio board repeat the cell text and never carry a value on their own.
    Cyan is the only accent, and it marks interface affordances: links, the
    active nav item, focus rings, evidence rules.
    -------------------------------------------------------------------------- */
@@ -1175,4 +1176,42 @@
   .backing__grid { grid-template-columns: minmax(0, 1fr); }
   .prose h2 { display: block; }
   .prose h2 .h-num { display: block; margin-bottom: 4px; }
+}
+/* ==========================================================================
+   Ratio Regime Board — colour steps (Board v2). For Patrick to paste into
+   /assets/css/lab.css; the generator only emits these class names.
+   One six-step scale, dark -> light, so the order survives greyscale:
+     step  meaning                         background  CIE L*  text     contrast
+     0     0/5 · F · BEAR     red          #8b1a1a     30.2    #eae7e2  7.53:1
+     1     1/5 · D            orange       #a8461a     42.4    #eae7e2  4.79:1
+     2     2/5 · (unused)     burnt orange #c46b28     54.5    #131415  4.81:1
+     3     3/5 · C · mixed    grey         #9b9b9b     64.0    #131415  6.64:1
+     4     4/5 · B            teal         #5ccfbb     76.4    #131415  9.75:1
+     5     5/5 · A · BULL     green        #aeeaa0     87.2    #131415  13.24:1
+   L* rises 9.5-12.2 points per step (monotonic). Text stays in every cell; the
+   colour repeats it and never carries a value on its own.
+   ========================================================================== */
+.board tbody td.board__step { font-variant-numeric: tabular-nums; }
+.board tbody td.board__step--0 { background-color: #8b1a1a; color: #eae7e2; }
+.board tbody td.board__step--1 { background-color: #a8461a; color: #eae7e2; }
+.board tbody td.board__step--2 { background-color: #c46b28; color: #131415; }
+.board tbody td.board__step--3 { background-color: #9b9b9b; color: #131415; }
+.board tbody td.board__step--4 { background-color: #5ccfbb; color: #131415; }
+.board tbody td.board__step--5 { background-color: #aeeaa0; color: #131415; }
+/* first/last-cell padding in lab.css is 0; coloured cells need their own inset */
+.board tbody td.board__step:first-child,
+.board tbody td.board__step:last-child { padding-left: 16px; padding-right: 16px; }
+
+/* One-line section reading key under each section header. */
+.board tbody tr.board__key td {
+  padding-top: 0;
+  border-top: 0;
+  text-align: left;
+  font-style: italic;
+  color: var(--kn-muted);
+}
+
+/* Windows high-contrast / forced colours: drop the fills, keep the text. */
+@media (forced-colors: active) {
+  .board tbody td.board__step { background-color: Canvas; color: CanvasText; }
 }
