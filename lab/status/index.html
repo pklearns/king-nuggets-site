@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Status — King Nuggets Lab</title>
-<meta name="description" content="Every system in the Lab, its state, and the evidence for it. Five states, distinguished by glyph, weight and indent rather than by colour.">
+<meta name="description" content="Every Lab project, its stage under the LAB_STATUS vocabulary, the evidence for it and its state-as-of date.">
 <meta name="robots" content="noindex">
 <meta name="color-scheme" content="dark">
 
@@ -45,8 +45,8 @@
   <section class="split-head split-head--tight">
     <div class="split-head__prose">
       <div class="sect-id">§ 02 — Status</div>
-      <h1 class="page-title">Every system, its state, and the evidence for it.</h1>
-      <p class="lede">Five states, in order of how much can be claimed for them. A system moves up this table only when evidence is attached, and down it the moment evidence goes stale.</p>
+      <h1 class="page-title">Every project, its stage, and the evidence for it.</h1>
+      <p class="lede">Stages follow the Lab status vocabulary, in order of how much can be claimed. A project moves up only when evidence is attached, may stop at any stage, and is recorded as failed rather than removed when it does not survive validation.</p>
     </div>
     <aside class="rail" aria-label="Board summary">
       <div>
@@ -54,107 +54,92 @@
         <div class="rail__value">2026-09-26</div>
       </div>
       <div>
-        <div class="rail__label">Systems listed</div>
-        <div class="rail__value">4</div>
+        <div class="rail__label">Projects listed</div>
+        <div class="rail__value">6</div>
+      </div>
+      <div>
+        <div class="rail__label">Vocabulary</div>
+        <a class="rail__value" href="../LAB_STATUS.md">LAB_STATUS.md ↗</a>
       </div>
     </aside>
   </section>
 
   <div class="board__wrap">
     <table class="board">
-      <caption class="sr-only">Every system, its state, and the evidence for it.</caption>
+      <caption class="sr-only">Every Lab project, its stage, the evidence for it and its state-as-of date.</caption>
       <thead>
         <tr>
-          <th scope="col">System</th>
-          <th scope="col">State</th>
+          <th scope="col">Project</th>
+          <th scope="col">Stage</th>
           <th scope="col">Evidence</th>
-          <th scope="col">Last verified</th>
+          <th scope="col">State as of</th>
         </tr>
       </thead>
       <tbody>
         <tr class="board__group board__group--first">
-          <td colspan="4">■ Running — in production, evidence required</td>
+          <td colspan="4">Validating — results are being checked against the pre-registered question</td>
         </tr>
         <tr>
-          <td><a class="board__system" href="../sctr/">SCTR board</a></td>
-          <td class="board__state board__state--running">■ Running</td>
-          <td class="board__evidence board__evidence--present">5.5M panel rows · 201 tests · scanner nightly at 18:00 weekdays, board published after it · latest board 2026-09-25</td>
+          <td><a class="board__system" href="../keller-trend-model/">Keller trend model</a></td>
+          <td class="board__state">Validating</td>
+          <td class="board__evidence board__evidence--present">Independent replication of David Keller’s three-timeframe weekly trend model; not affiliated · runs on the S&amp;P 500 index daily close (FRED) · 44 tests · pass test set before the first check: 8 consecutive weeks matching StockCharts’ chart · <!--kp:status-->1 of 8 weeks matched<!--/kp:status--> · 4 of 6 historical checks match Keller’s published calls, 2 discrepancies under investigation · readings unpublished until validation passes</td>
+          <td class="board__verified"><!--kp:verified-->2026-09-26<!--/kp:verified--></td>
+        </tr>
+        <tr class="board__group">
+          <td colspan="4">Testing — implementation exists and is being run against data</td>
+        </tr>
+        <tr>
+          <td><a class="board__system" href="../sctr/">SCTR rank</a></td>
+          <td class="board__state">Testing</td>
+          <td class="board__evidence board__evidence--present">Matched the published StockCharts SCTR at a rank correlation of 0.9953 across 483 names on 2026-07-02; no pass threshold was set in advance · 5.5M panel rows · 201 tests · runs 18:00 each weekday, board published after it · latest board 2026-09-25</td>
+          <td class="board__verified">2026-09-26</td>
+        </tr>
+        <tr>
+          <td><a class="board__system" href="../article/sctr-scanner/">SCTR hook pool</a></td>
+          <td class="board__state">Testing</td>
+          <td class="board__evidence board__evidence--present">+2.3% over 20 days out-of-sample against +0.8% for a control, 856 cases in the S&amp;P 1500 (2026-07-10 article) · concentrated in the last twelve months · forward record builds each weekday · no pre-registration of entry rules yet</td>
           <td class="board__verified">2026-09-26</td>
         </tr>
         <tr>
           <td><a class="board__system" href="../ratio-board/">Ratio board</a></td>
-          <td class="board__state board__state--running">■ Running</td>
-          <td class="board__evidence board__evidence--present">81 symbols and ratios, 80 scored · weekly on the Friday close, published by hand · latest board week ending 2026-09-25 · scorer not yet under version control, no automated tests</td>
+          <td class="board__state">Testing</td>
+          <td class="board__evidence board__evidence--present">81 symbols and ratios, 80 scored · run weekly on the Friday close, published by hand · latest board week ending 2026-09-25 · no pre-registered question yet · scorer not yet under version control, no automated tests</td>
           <td class="board__verified">2026-09-26</td>
         </tr>
-
         <tr class="board__group">
-          <td colspan="4">◨ Validating — run on real data, being checked against an outside reference</td>
+          <td colspan="4">Concept — the question exists. No scope, no method.</td>
         </tr>
         <tr>
-          <td><a class="board__system board__system--building" href="../keller-trend-model/">Keller trend model</a></td>
-          <td class="board__state">◨ Validating</td>
-          <td class="board__evidence board__evidence--present">Independent replication of David Keller’s three-timeframe weekly trend model; not affiliated · runs on the S&amp;P 500 index daily close (FRED) · 30 tests · weekly check against StockCharts’ chart: <!--kp:status-->1 of 8 weeks matched<!--/kp:status--> · readings unpublished until validation passes</td>
-          <td class="board__verified"><!--kp:verified-->2026-09-26<!--/kp:verified--></td>
+          <td><span class="board__system">Cycle dashboard</span></td>
+          <td class="board__state">Concept</td>
+          <td class="board__evidence">Display built on the main site with sample figures · publishing gated on verified cycle anchor inputs · no validation approach written yet</td>
+          <td class="board__verified">2026-09-26</td>
         </tr>
-
         <tr class="board__group">
-          <td colspan="4">◧ In build — code exists, not yet run on real data</td>
+          <td colspan="4">Failed — did not survive validation; recorded, not removed</td>
         </tr>
         <tr>
-          <td><span class="board__system board__system--building">—</span></td>
-          <td class="board__state">◧ In build</td>
-          <td class="board__evidence">No system is in build right now.</td>
-          <td class="board__verified">—</td>
-        </tr>
-
-        <tr class="board__group">
-          <td colspan="4">□ Specced — designed, not built</td>
-        </tr>
-        <tr>
-          <td><span class="board__system board__system--specced">Cycle dashboard</span></td>
-          <td class="board__state">□ Specced</td>
-          <td class="board__evidence">Spec only. Withheld — gated on verified cycle anchor inputs.</td>
-          <td class="board__verified">—</td>
-        </tr>
-
-        <tr class="board__group">
-          <td colspan="4">— Parked — deliberately deferred, reason stated</td>
-        </tr>
-        <tr>
-          <td><span class="board__system board__system--parked">—</span></td>
-          <td class="board__state">— Parked</td>
-          <td class="board__evidence">No parked system is listed yet.</td>
-          <td class="board__verified">—</td>
+          <td><a class="board__system" href="../article/sctr-scanner/">SCTR trajectory ranking as a return predictor</a></td>
+          <td class="board__state">Failed</td>
+          <td class="board__evidence board__evidence--present">Pre-registered test: top decile minus bottom decile straddles zero, in-sample and out-of-sample, across every group and horizon (2026-07-10 article). Kept as a screen, not an edge.</td>
+          <td class="board__verified">2026-07-10</td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <section class="legend legend--five" aria-labelledby="legend-heading">
-    <h2 class="sr-only" id="legend-heading">State legend</h2>
-    <div class="legend__item">
-      <h3 class="legend__term legend__term--running">■ Running</h3>
-      <p class="legend__def">In production. A row may only sit here with evidence attached and a verification date inside the current window.</p>
-    </div>
-    <div class="legend__item">
-      <h3 class="legend__term">◨ Validating</h3>
-      <p class="legend__def">Running on real data and being checked against an outside reference. Outputs stay unpublished until the check passes.</p>
-    </div>
-    <div class="legend__item">
-      <h3 class="legend__term">◧ In build</h3>
-      <p class="legend__def">Code and tests exist; the system has not yet run on real data. Evidence is limited to what the tests show.</p>
-    </div>
-    <div class="legend__item">
-      <h3 class="legend__term">□ Specced</h3>
-      <p class="legend__def">Designed and written down, not built. No metrics, no track record, no verification date.</p>
-    </div>
-    <div class="legend__item">
-      <h3 class="legend__term">— Parked</h3>
-      <p class="legend__def">Deferred on purpose. The reason is stated in the row; a parked system is not a failed one.</p>
-    </div>
+  <section class="legend legend--stages" aria-labelledby="legend-heading">
+    <h2 class="sr-only" id="legend-heading">Stage definitions</h2>
+    <div class="legend__item"><h3 class="legend__term">Concept</h3><p class="legend__def">The question exists. No scope, no method.</p></div>
+    <div class="legend__item"><h3 class="legend__term">Specced</h3><p class="legend__def">Purpose, boundaries, and validation approach are written down. No indicators selected, nothing built.</p></div>
+    <div class="legend__item"><h3 class="legend__term">Researching</h3><p class="legend__def">Inputs are being selected and justified against the spec.</p></div>
+    <div class="legend__item"><h3 class="legend__term">Testing</h3><p class="legend__def">Implementation exists and is being run against data.</p></div>
+    <div class="legend__item"><h3 class="legend__term">Validating</h3><p class="legend__def">Results are being checked against the pre-registered question, including for a null result.</p></div>
+    <div class="legend__item"><h3 class="legend__term">Candidate</h3><p class="legend__def">Validated. Under evaluation for production use.</p></div>
+    <div class="legend__item"><h3 class="legend__term">Graduated</h3><p class="legend__def">Moved to the primary King Nuggets research product.</p></div>
+    <div class="legend__item"><h3 class="legend__term">Failed</h3><p class="legend__def">A project that fails validation is recorded as failed, not removed.</p></div>
   </section>
-  <p class="mono-note legend__note">State is set by glyph, weight and indent. It is never encoded in colour.</p>
+  <p class="mono-note legend__note">Definitions are quoted from LAB_STATUS.md. Stage is carried by the label and the grouping. It is never encoded in colour.</p>
 
 </main>
 

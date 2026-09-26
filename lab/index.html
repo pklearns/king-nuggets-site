@@ -79,34 +79,44 @@
         <a class="dash__more" href="status/">Status board →</a>
       </div>
       <table class="board board--compact dash__status">
-        <caption class="sr-only">Each Lab system, its state and its latest published output.</caption>
+        <caption class="sr-only">Each Lab project, its stage and its latest output.</caption>
         <thead>
           <tr>
-            <th scope="col">System</th>
-            <th scope="col">State</th>
+            <th scope="col">Project</th>
+            <th scope="col">Stage</th>
             <th scope="col">Latest</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><span class="board__system">SCTR</span></td>
-            <td class="board__state board__state--running">■ Running</td>
-            <td class="board__evidence board__evidence--present">Board 2026-09-25 · nightly at 18:00 weekdays</td>
-          </tr>
-          <tr>
-            <td><span class="board__system">Ratio board</span></td>
-            <td class="board__state board__state--running">■ Running</td>
-            <td class="board__evidence board__evidence--present">Board week ending Friday 2026-09-25 · weekly, published by hand</td>
-          </tr>
-          <tr>
-            <td><a class="board__system board__system--building" href="keller-trend-model/">Keller trend model</a></td>
-            <td class="board__state">◨ Validating</td>
+            <td><a class="board__system" href="keller-trend-model/">Keller trend model</a></td>
+            <td class="board__state">Validating</td>
             <td class="board__evidence board__evidence--present">Running on real data · weekly check against StockCharts: <!--kp:dash-->1 of 8 weeks matched<!--/kp:dash--></td>
           </tr>
           <tr>
-            <td><span class="board__system board__system--specced">Cycle dashboard</span></td>
-            <td class="board__state">□ Specced</td>
+            <td><a class="board__system" href="sctr/">SCTR rank</a></td>
+            <td class="board__state">Testing</td>
+            <td class="board__evidence board__evidence--present">Board 2026-09-25 · runs 18:00 each weekday</td>
+          </tr>
+          <tr>
+            <td><span class="board__system">SCTR hook pool</span></td>
+            <td class="board__state">Testing</td>
+            <td class="board__evidence board__evidence--present">Forward record building · no pre-registration yet</td>
+          </tr>
+          <tr>
+            <td><a class="board__system" href="ratio-board/">Ratio board</a></td>
+            <td class="board__state">Testing</td>
+            <td class="board__evidence board__evidence--present">Board week ending Friday 2026-09-25 · weekly, published by hand</td>
+          </tr>
+          <tr>
+            <td><span class="board__system">Cycle dashboard</span></td>
+            <td class="board__state">Concept</td>
             <td class="board__evidence">Withheld — gated on verified cycle anchor inputs</td>
+          </tr>
+          <tr>
+            <td><span class="board__system">SCTR trajectory as predictor</span></td>
+            <td class="board__state">Failed</td>
+            <td class="board__evidence board__evidence--present">Pre-registered null · kept as a screen, not an edge</td>
           </tr>
         </tbody>
       </table>
