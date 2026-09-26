@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Status — King Nuggets Lab</title>
-<meta name="description" content="Every system in the Lab, its state, and the evidence for it. Three states, distinguished by glyph, weight and indent rather than by colour.">
+<meta name="description" content="Every system in the Lab, its state, and the evidence for it. Five states, distinguished by glyph, weight and indent rather than by colour.">
 <meta name="robots" content="noindex">
 <meta name="color-scheme" content="dark">
 
@@ -46,7 +46,7 @@
     <div class="split-head__prose">
       <div class="sect-id">§ 02 — Status</div>
       <h1 class="page-title">Every system, its state, and the evidence for it.</h1>
-      <p class="lede">Four states, in order of how much can be claimed for them. A system moves up this table only when evidence is attached, and down it the moment evidence goes stale.</p>
+      <p class="lede">Five states, in order of how much can be claimed for them. A system moves up this table only when evidence is attached, and down it the moment evidence goes stale.</p>
     </div>
     <aside class="rail" aria-label="Board summary">
       <div>
@@ -89,13 +89,23 @@
         </tr>
 
         <tr class="board__group">
+          <td colspan="4">◨ Validating — run on real data, being checked against an outside reference</td>
+        </tr>
+        <tr>
+          <td><a class="board__system board__system--building" href="../keller-trend-model/">Keller trend model</a></td>
+          <td class="board__state">◨ Validating</td>
+          <td class="board__evidence board__evidence--present">Independent replication of David Keller’s three-timeframe weekly trend model; not affiliated · runs on the S&amp;P 500 index daily close (FRED) · 30 tests · weekly check against StockCharts’ chart: 1 of 8 weeks matched · readings unpublished until validation passes</td>
+          <td class="board__verified">2026-09-26</td>
+        </tr>
+
+        <tr class="board__group">
           <td colspan="4">◧ In build — code exists, not yet run on real data</td>
         </tr>
         <tr>
-          <td><span class="board__system board__system--building">Keller trend model</span></td>
+          <td><span class="board__system board__system--building">—</span></td>
           <td class="board__state">◧ In build</td>
-          <td class="board__evidence board__evidence--present">Independent replication of David Keller’s three-timeframe weekly trend model; not affiliated · code and 21 tests on synthetic data · not yet run on real prices · waiting on a verified weekly price source</td>
-          <td class="board__verified">2026-09-26</td>
+          <td class="board__evidence">No system is in build right now.</td>
+          <td class="board__verified">—</td>
         </tr>
 
         <tr class="board__group">
@@ -121,11 +131,15 @@
     </table>
   </div>
 
-  <section class="legend legend--four" aria-labelledby="legend-heading">
+  <section class="legend legend--five" aria-labelledby="legend-heading">
     <h2 class="sr-only" id="legend-heading">State legend</h2>
     <div class="legend__item">
       <h3 class="legend__term legend__term--running">■ Running</h3>
       <p class="legend__def">In production. A row may only sit here with evidence attached and a verification date inside the current window.</p>
+    </div>
+    <div class="legend__item">
+      <h3 class="legend__term">◨ Validating</h3>
+      <p class="legend__def">Running on real data and being checked against an outside reference. Outputs stay unpublished until the check passes.</p>
     </div>
     <div class="legend__item">
       <h3 class="legend__term">◧ In build</h3>

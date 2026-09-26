@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="lab">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keller Trend Model — King Nuggets Lab</title>
+<meta name="description" content="An independent replication of David Keller's published three-timeframe weekly trend model on the S&amp;P 500: the rules, the decisions, the data and how it is being validated.">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="dark">
+
+<link rel="stylesheet" href="../../assets/css/lab.css">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="shell site-head__inner">
+    <div class="wordmark">
+      <span class="wordmark__name">King&nbsp;Nuggets</span>
+      <span class="wordmark__bar" aria-hidden="true"></span>
+      <span class="wordmark__tag">Lab</span>
+    </div>
+    <div class="site-head__aside">
+      <a class="site-head__home" href="https://kingnuggets.com">kingnuggets.com&nbsp;↗</a>
+    </div>
+  </div>
+</header>
+
+<nav class="secnav" aria-label="Lab sections">
+  <div class="shell secnav__inner">
+    <a href="../"><span class="secnav__num">01</span><span>Dashboard</span></a>
+    <a href="../status/"><span class="secnav__num">02</span><span>Status</span></a>
+    <a href="../ratio-board/"><span class="secnav__num">03</span><span>Ratio board</span></a>
+    <a href="../sctr/"><span class="secnav__num">04</span><span>SCTR board</span></a>
+    <a href="../article/"><span class="secnav__num">05</span><span>Article</span></a>
+    <a href="../objectives-and-scope/"><span class="secnav__num">06</span><span>Objectives and Scope</span></a>
+    <a href="../archive/"><span class="secnav__num">07</span><span>Archive</span></a>
+    <a href="../entries/"><span class="secnav__num">08</span><span>Index</span></a>
+  </div>
+</nav>
+
+<main class="shell page-main" id="main">
+  <article>
+
+    <header class="article__head">
+      <div class="article__meta">
+        <span>Methodology entry</span>
+        <span>2026-09-26</span>
+      </div>
+      <h1 class="article__title">Keller Trend Model — an independent replication</h1>
+    </header>
+
+    <div class="article__body">
+      <div class="prose">
+
+        <h2 id="what-this-is"><span class="h-num">01</span><span>What this is</span></h2>
+        <p>An independent replication of the three-timeframe Market Trend Model that David Keller, CMT, has described in his StockCharts articles. It reads the weekly S&amp;P 500 and says whether the short, medium and long-term trend is up or down.</p>
+        <p>This is my implementation, built from his published descriptions. It is not affiliated with or endorsed by David Keller, Sierra Alpha Research or StockCharts. Where his articles leave something open, the decision is mine and is labelled as mine below.</p>
+
+        <h2 id="the-rules-as-published"><span class="h-num">02</span><span>The rules as published</span></h2>
+        <p>All three use weekly bars and exponential moving averages (EMAs):</p>
+        <p><strong>Short term.</strong> The weekly close against its 5-week EMA.<br>
+        <strong>Medium term.</strong> The 5-week EMA against the 13-week EMA. Keller treats this as his main gauge, with a horizon of one to three months.<br>
+        <strong>Long term.</strong> The 21-week EMA against the 34-week EMA.</p>
+        <p>Above means bullish, below means bearish. He charts each comparison as a percentage price oscillator (PPO), read against zero.</p>
+        <p>Sources: <a href="https://articles.stockcharts.com/article/articles-mindfulinvestor-2023-11-my-market-trend-model-is-prett-578">My Market Trend Model is Pretty Bulled Up</a> (2023-11-17), <a href="https://articles.stockcharts.com/article/articles-mindfulinvestor-2024-11-shortterm-bearish-signal-as-ma-82">Short-Term Bearish Signal as Markets Brace for News-Heavy Week</a> (2024-11-05), <a href="https://articles.stockcharts.com/article/articles-mindfulinvestor-2023-03-market-trend-model-turns-beari-389">Market Trend Model Turns Bearish</a> (2023-03-17).</p>
+
+        <h2 id="what-i-had-to-decide"><span class="h-num">03</span><span>What I had to decide</span></h2>
+        <p>The articles give the averages. Making them mechanical needed these choices:</p>
+        <p><strong>Seeding the averages.</strong> Each EMA starts from a simple average of its first bars. That is the convention StockCharts documents in ChartSchool.<br>
+        <strong>Warm-up.</strong> No reading is recorded before the 250th weekly bar, so the starting value's influence is negligible.<br>
+        <strong>The week.</strong> A calendar week, closing on its last trading day. When Friday is a market holiday, Thursday's close is the week's close.<br>
+        <strong>Finished weeks only.</strong> A week counts once it has closed. Nothing is read from a week still in progress.<br>
+        <strong>No overwriting.</strong> Each run is stored alongside earlier runs rather than over them, so a changed input shows up as a revision.</p>
+        <p>What "SAR" means in his "SAR Market Trend Model" chart list is not stated anywhere I found. I have not guessed.</p>
+
+        <h2 id="data"><span class="h-num">04</span><span>Data</span></h2>
+        <p>The input is the S&amp;P 500 index daily close, published by S&amp;P Dow Jones Indices through the Federal Reserve Bank of St. Louis (FRED series SP500). It is the index itself, not an ETF that tracks it, and nothing is substituted for it.</p>
+        <p>Index levels and moving-average values are not reproduced on this page. S&amp;P's terms require permission to republish the index.</p>
+
+        <h2 id="how-it-is-being-validated"><span class="h-num">05</span><span>How it is being validated</span></h2>
+        <p>Each weekend I read the three PPO values off StockCharts' weekly chart of the S&amp;P 500 and compare them with this model. A week passes only when all three directions agree <em>and</em> all three values agree to within 0.002.</p>
+        <p>Directions alone are not enough. On the first check I read a daily chart by mistake. It showed the same three directions as the weekly model, with quite different values. A direction-only test would have passed it.</p>
+        <p>The standard is eight consecutive finished weeks. A miss restarts the count and gets investigated. The formulas are not changed to make a week match.</p>
+        <p><strong>Progress:</strong> 1 of 8 (week ending 2026-09-25: directions and values agree).</p>
+
+        <h2 id="checks-against-keller"><span class="h-num">06</span><span>Checks against Keller's own articles</span></h2>
+        <p>These are six dated statements in his articles, run against this model's history:</p>
+        <p><strong>Match.</strong> The medium term turned slightly negative on the 2023-03-10 close (reading his "Friday's close" as the Friday before the article's date). The medium term turned bullish on the 2023-11-17 close, putting all three up. The short term turned bearish on the 2024-11-01 close, with the medium and long term still bullish. And that was the fourth short-term bearish turn of 2024.</p>
+        <p><strong>Open.</strong> He wrote that the long-term model had been bullish "since the end of May" 2023. This model turns it bullish on 2023-04-14. He also wrote that all three were bullish "for the first time since July". This model also has all three up for one week, 2023-09-01.</p>
+        <p>The one weekly reading so far (week ending 2026-09-25) agrees with StockCharts' weekly chart. Simple moving averages were also tested, and they fit his dated statements worse than exponential ones. The two open items may come down to how the articles were worded, but that is not shown, so they stay listed as open.</p>
+
+        <h2 id="what-is-not-here"><span class="h-num">07</span><span>What is not here, and why</span></h2>
+        <p>There are no index levels and no chart values, for the licensing reasons above. There are no current readings from the model either: readings stay unpublished until validation passes, and whether to publish them then is a separate decision.</p>
+        <p>This page describes a method under test. It is not a trade signal.</p>
+
+        <h2 id="status"><span class="h-num">08</span><span>Status</span></h2>
+        <p><strong>Validating</strong> — run on real data, being checked against an outside reference. State as of 2026-09-26.</p>
+
+        <p><em>Research, not investment advice.</em></p>
+      </div>
+
+      <aside class="contents" aria-label="Contents">
+        <div class="contents__label">Contents</div>
+        <ul class="contents__list">
+          <li><a class="is-current" href="#what-this-is">01 — What this is</a></li>
+          <li><a href="#the-rules-as-published">02 — The rules as published</a></li>
+          <li><a href="#what-i-had-to-decide">03 — What I had to decide</a></li>
+          <li><a href="#data">04 — Data</a></li>
+          <li><a href="#how-it-is-being-validated">05 — How it is being validated</a></li>
+          <li><a href="#checks-against-keller">06 — Checks against Keller's own articles</a></li>
+          <li><a href="#what-is-not-here">07 — What is not here, and why</a></li>
+          <li><a href="#status">08 — Status</a></li>
+        </ul>
+      </aside>
+    </div>
+
+  </article>
+</main>
+
+<footer class="site-foot">
+  <div class="shell site-foot__inner">
+    <div class="site-foot__mark">
+      <span class="site-foot__name">King Nuggets</span>
+      <span class="site-foot__sub">/ Lab</span>
+    </div>
+    <div class="site-foot__meta">
+      <span>Updated 2026-09-26</span>
+      <a href="https://kingnuggets.com">kingnuggets.com ↗</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

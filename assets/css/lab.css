@@ -1393,6 +1393,8 @@
 .board__system--building { font-weight: 500; font-size: 16px; padding-left: 12px; }
 .lab a.board__system { color: var(--kn-text); }
 .legend.legend--four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.legend.legend--five { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 @media (max-width: 860px) {
-  .legend.legend--four { grid-template-columns: minmax(0, 1fr); }
+  .legend.legend--four,
+  .legend.legend--five { grid-template-columns: minmax(0, 1fr); }
 }
