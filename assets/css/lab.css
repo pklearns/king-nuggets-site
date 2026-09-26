@@ -1375,3 +1375,15 @@
 /* Status excerpt: the last column is prose, so it reads left like the rest. */
 .board.dash__status thead th:last-child,
 .board.dash__status tbody td:last-child { text-align: left; }
+
+/* Ratio watchlist on the Dashboard: section reading key, and a floor on
+   table width so a narrow screen scrolls the table, never the page. */
+.dash__key {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--kn-muted);
+  margin: -4px 0 12px;
+  max-width: 72ch;
+}
+.dash--pair > .dash__col { margin-bottom: 24px; }
+.board.board--watch { min-width: 460px; }
