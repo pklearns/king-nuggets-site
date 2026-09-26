@@ -57,35 +57,36 @@
 
     <div class="article__body">
       <div class="prose">
+        <h2 id="where-the-scanner-came-from"><span class="h-num">01</span><span>Where the Scanner Came From</span></h2>
         <p class="is-muted"><em>I rebuilt the StockCharts Technical Rank from raw data so I could test it. What I found is why I lead with the number that didn’t work.</em></p>
         <p>Most of my published work moves one chart at a time. Gold, the dollar, the miners, silver. That’s the right pace for a short list, and a short list is what my cycle work needs. It falls apart the moment I want to know which names across the whole market are gaining strength, because nobody opens two thousand charts before the coffee’s cold.</p>
         <p class="is-spaced">So I built something to let the whole market raise its hand first, then do my usual chart-by-chart read on the short list that’s left. That’s the scanner. This is where it came from and what it actually does — including the part where the main idea didn’t work.</p>
 
-        <h2 id="the-number-stockcharts-already-had"><span class="h-num">01</span><span>The number StockCharts already had</span></h2>
+        <h2 id="the-number-stockcharts-already-had"><span class="h-num">02</span><span>The number StockCharts already had</span></h2>
         <p>StockCharts publishes a number called the SCTR, the StockCharts Technical Rank. It grades a stock from 0 to 99 on how healthy it looks right now, measured against every other name in its group. A 95 sits in the top few percent. A 10 is near the back of the class. It’s a fitness score for a stock, graded on a curve, and it’s a good one.</p>
         <p>Two things about it sent me building my own version. It’s a daily snapshot, so there’s no history sitting behind it to test an idea against. And it tells you where a name stands today, not which way it’s moving. A stock can be strong and fading or weak and turning, and the rank alone hides the difference.</p>
 
-        <h2 id="so-i-rebuilt-it"><span class="h-num">02</span><span>So I rebuilt it</span></h2>
+        <h2 id="so-i-rebuilt-it"><span class="h-num">03</span><span>So I rebuilt it</span></h2>
         <p>I compute my own SCTR from raw price data across about 7,000 names, the S&amp;P 1500 and the ETF universe, going back to 2021. That gives me years of history to test against instead of one morning’s picture.</p>
         <p>Before I trusted a word of it, I checked my version against the published one. On July 2, across 483 names, mine matched StockCharts at a rank correlation of 0.9953. For a general reader: close enough to call it the same number. For anyone who wants to know where the gap went, it isn’t formula error. It decomposes into which names each of us happens to include, plus one corporate action — Honeywell’s aerospace spin-off three days earlier — and nothing else. Zero formula error.</p>
         <p>That check does more work than it looks. If my rebuilt number isn’t really the StockCharts number, then nothing I do after it counts. Getting that right is the foundation the rest of the tool sits on.</p>
 
-        <h2 id="the-thing-i-had-backwards"><span class="h-num">03</span><span>The thing I had backwards</span></h2>
+        <h2 id="the-thing-i-had-backwards"><span class="h-num">04</span><span>The thing I had backwards</span></h2>
         <p>My first instinct was to hunt for 99s. Wrong habit. A 99 with a flat trajectory already made its move; you’re looking at a race that’s over.</p>
         <p>What tells you something is the trajectory: how fast the rank is climbing over 10 and 20 days, and how steadily. On July 2, SMH sat at a rank of 99.7 with velocity near zero. Already there, nothing left to confirm. THC sat at 60, up 38 points in ten days, top of the fresh list. Mid-level and rising beats maxed and flat. Reading strength and direction together, instead of strength alone, is most of the job.</p>
 
-        <h2 id="the-seam-that-makes-it-mine"><span class="h-num">04</span><span>The seam that makes it mine</span></h2>
+        <h2 id="the-seam-that-makes-it-mine"><span class="h-num">05</span><span>The seam that makes it mine</span></h2>
         <p>A generic momentum screen stops there. Mine feeds the ranked names into a cycle detector built on the Bressert method I use for the gold work. It flags names that are weak and have just turned up — the hook. That’s the thread connecting this scanner to everything else I publish. The scanner builds the field of candidates; my cycle work times the entry.</p>
         <p>The lag from a price low to the hook flag runs about 27 days in the S&amp;P 1500 names. That’s the whole reason I don’t read a hook as a buy signal. I read it as a name to start watching, and I hand the timing to the cycle read.</p>
 
-        <h2 id="the-number-that-didnt-work"><span class="h-num">05</span><span>The number that didn’t work</span></h2>
+        <h2 id="the-number-that-didnt-work"><span class="h-num">06</span><span>The number that didn’t work</span></h2>
         <p>Here’s the part I’d normally be tempted to bury.</p>
         <p>I tested whether ranking names by their trajectory predicts their returns. It doesn’t. The top decile minus the bottom decile straddles zero, in-sample and out-of-sample, across every group and every horizon I tried. As a return predictor, the ranking is a screen, not an edge. I pre-registered that test before I ran it, so I couldn’t move the goalposts once I saw the result, and I’m reporting it exactly as it came out.</p>
 
         <p>I lead with that null on purpose. A research tool you can trust is one whose author tells you plainly what it can’t do.</p>
         <p>One piece did show something. The hook pool, those weak-and-just-turned names, returned +2.3% over 20 days out-of-sample against +0.8% for a control, across 856 cases in the S&amp;P 1500. That’s the one result worth watching. It’s a hypothesis, not a proven edge: it’s concentrated in the last twelve months and flat-to-negative before that, so I won’t claim it until it survives a market it couldn’t have been fit to. The forward record builds on its own every evening, look-ahead-free, and that answer arrives on its own schedule over the next six to twelve months.</p>
 
-        <h2 id="what-it-does-now"><span class="h-num">06</span><span>What it does now</span></h2>
+        <h2 id="what-it-does-now"><span class="h-num">07</span><span>What it does now</span></h2>
         <p>It runs itself at 18:00 every weekday and emails me a short synthesized read: the watchlist first, then fresh leaders by trajectory, then what’s rolling over, then whether the separate groups agree on a theme. It’s deterministic, computed from rules, with no AI writing the analysis.</p>
         <p>If you want the operating manual — the patterns I read and the order I read them in — that’s the companion piece, “How to Read the Scanner.” This one was the origin story: where it came from, and why the first thing I show you is the test that failed.</p>
 
@@ -114,12 +115,13 @@
       <aside class="contents" aria-label="Contents">
         <div class="contents__label">Contents</div>
         <ul class="contents__list">
-          <li><a href="#the-number-stockcharts-already-had">01 — The number StockCharts already had</a></li>
-          <li><a href="#so-i-rebuilt-it">02 — So I rebuilt it</a></li>
-          <li><a href="#the-thing-i-had-backwards">03 — The thing I had backwards</a></li>
-          <li><a href="#the-seam-that-makes-it-mine">04 — The seam that makes it mine</a></li>
-          <li><a href="#the-number-that-didnt-work">05 — The number that didn’t work</a></li>
-          <li><a href="#what-it-does-now">06 — What it does now</a></li>
+          <li><a href="#where-the-scanner-came-from">01 — Where the Scanner Came From</a></li>
+          <li><a href="#the-number-stockcharts-already-had">02 — The number StockCharts already had</a></li>
+          <li><a href="#so-i-rebuilt-it">03 — So I rebuilt it</a></li>
+          <li><a href="#the-thing-i-had-backwards">04 — The thing I had backwards</a></li>
+          <li><a href="#the-seam-that-makes-it-mine">05 — The seam that makes it mine</a></li>
+          <li><a href="#the-number-that-didnt-work">06 — The number that didn’t work</a></li>
+          <li><a href="#what-it-does-now">07 — What it does now</a></li>
         </ul>
       </aside>
     </div>
