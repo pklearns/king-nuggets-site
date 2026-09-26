@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="lab">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SCTR Scanner — King Nuggets Lab</title>
+<meta name="description" content="Introducing my momentum scanner build with a hook. I rebuilt the StockCharts Technical Rank from raw data so I could test it.">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://kingnuggets.substack.com/p/sctr-scanner">
+
+<link rel="stylesheet" href="../../../assets/css/lab.css">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="shell site-head__inner">
+    <div class="wordmark">
+      <span class="wordmark__name">King&nbsp;Nuggets</span>
+      <span class="wordmark__bar" aria-hidden="true"></span>
+      <span class="wordmark__tag">Lab</span>
+    </div>
+    <div class="site-head__aside">
+      <a class="site-head__home" href="https://kingnuggets.com">kingnuggets.com&nbsp;↗</a>
+    </div>
+  </div>
+</header>
+
+<nav class="secnav" aria-label="Lab sections">
+  <div class="shell secnav__inner">
+    <a href="../../"><span class="secnav__num">01</span><span>Dashboard</span></a>
+    <a href="../../status/"><span class="secnav__num">02</span><span>Status</span></a>
+    <a href="../../ratio-board/"><span class="secnav__num">03</span><span>Ratio board</span></a>
+    <a href="../../sctr/"><span class="secnav__num">04</span><span>SCTR board</span></a>
+    <a href="../../article/" aria-current="true"><span class="secnav__num">05</span><span>Article</span></a>
+    <a href="../../objectives-and-scope/"><span class="secnav__num">06</span><span>Objectives and Scope</span></a>
+    <a href="../../archive/"><span class="secnav__num">07</span><span>Archive</span></a>
+    <a href="../../entries/"><span class="secnav__num">08</span><span>Index</span></a>
+  </div>
+</nav>
+
+<main class="shell page-main" id="main">
+  <article>
+
+    <header class="article__head">
+      <div class="article__meta">
+        <span>§ 05 — Article</span>
+        <span class="is-running">■ Running</span>
+        <span>2026-07-10</span>
+        <span>Patrick King</span>
+      </div>
+      <h1 class="article__title">SCTR Scanner</h1>
+      <p class="article__standfirst">Introducing my momentum scanner build with a hook.</p>
+    </header>
+
+    <div class="article__body">
+      <div class="prose">
+        <p class="is-muted"><em>I rebuilt the StockCharts Technical Rank from raw data so I could test it. What I found is why I lead with the number that didn’t work.</em></p>
+        <p>Most of my published work moves one chart at a time. Gold, the dollar, the miners, silver. That’s the right pace for a short list, and a short list is what my cycle work needs. It falls apart the moment I want to know which names across the whole market are gaining strength, because nobody opens two thousand charts before the coffee’s cold.</p>
+        <p class="is-spaced">So I built something to let the whole market raise its hand first, then do my usual chart-by-chart read on the short list that’s left. That’s the scanner. This is where it came from and what it actually does — including the part where the main idea didn’t work.</p>
+
+        <h2 id="the-number-stockcharts-already-had"><span class="h-num">01</span><span>The number StockCharts already had</span></h2>
+        <p>StockCharts publishes a number called the SCTR, the StockCharts Technical Rank. It grades a stock from 0 to 99 on how healthy it looks right now, measured against every other name in its group. A 95 sits in the top few percent. A 10 is near the back of the class. It’s a fitness score for a stock, graded on a curve, and it’s a good one.</p>
+        <p>Two things about it sent me building my own version. It’s a daily snapshot, so there’s no history sitting behind it to test an idea against. And it tells you where a name stands today, not which way it’s moving. A stock can be strong and fading or weak and turning, and the rank alone hides the difference.</p>
+
+        <h2 id="so-i-rebuilt-it"><span class="h-num">02</span><span>So I rebuilt it</span></h2>
+        <p>I compute my own SCTR from raw price data across about 7,000 names, the S&amp;P 1500 and the ETF universe, going back to 2021. That gives me years of history to test against instead of one morning’s picture.</p>
+        <p>Before I trusted a word of it, I checked my version against the published one. On July 2, across 483 names, mine matched StockCharts at a rank correlation of 0.9953. For a general reader: close enough to call it the same number. For anyone who wants to know where the gap went, it isn’t formula error. It decomposes into which names each of us happens to include, plus one corporate action — Honeywell’s aerospace spin-off three days earlier — and nothing else. Zero formula error.</p>
+        <p>That check does more work than it looks. If my rebuilt number isn’t really the StockCharts number, then nothing I do after it counts. Getting that right is the foundation the rest of the tool sits on.</p>
+
+        <h2 id="the-thing-i-had-backwards"><span class="h-num">03</span><span>The thing I had backwards</span></h2>
+        <p>My first instinct was to hunt for 99s. Wrong habit. A 99 with a flat trajectory already made its move; you’re looking at a race that’s over.</p>
+        <p>What tells you something is the trajectory: how fast the rank is climbing over 10 and 20 days, and how steadily. On July 2, SMH sat at a rank of 99.7 with velocity near zero. Already there, nothing left to confirm. THC sat at 60, up 38 points in ten days, top of the fresh list. Mid-level and rising beats maxed and flat. Reading strength and direction together, instead of strength alone, is most of the job.</p>
+
+        <h2 id="the-seam-that-makes-it-mine"><span class="h-num">04</span><span>The seam that makes it mine</span></h2>
+        <p>A generic momentum screen stops there. Mine feeds the ranked names into a cycle detector built on the Bressert method I use for the gold work. It flags names that are weak and have just turned up — the hook. That’s the thread connecting this scanner to everything else I publish. The scanner builds the field of candidates; my cycle work times the entry.</p>
+        <p>The lag from a price low to the hook flag runs about 27 days in the S&amp;P 1500 names. That’s the whole reason I don’t read a hook as a buy signal. I read it as a name to start watching, and I hand the timing to the cycle read.</p>
+
+        <h2 id="the-number-that-didnt-work"><span class="h-num">05</span><span>The number that didn’t work</span></h2>
+        <p>Here’s the part I’d normally be tempted to bury.</p>
+        <p>I tested whether ranking names by their trajectory predicts their returns. It doesn’t. The top decile minus the bottom decile straddles zero, in-sample and out-of-sample, across every group and every horizon I tried. As a return predictor, the ranking is a screen, not an edge. I pre-registered that test before I ran it, so I couldn’t move the goalposts once I saw the result, and I’m reporting it exactly as it came out.</p>
+
+        <p>I lead with that null on purpose. A research tool you can trust is one whose author tells you plainly what it can’t do.</p>
+        <p>One piece did show something. The hook pool, those weak-and-just-turned names, returned +2.3% over 20 days out-of-sample against +0.8% for a control, across 856 cases in the S&amp;P 1500. That’s the one result worth watching. It’s a hypothesis, not a proven edge: it’s concentrated in the last twelve months and flat-to-negative before that, so I won’t claim it until it survives a market it couldn’t have been fit to. The forward record builds on its own every evening, look-ahead-free, and that answer arrives on its own schedule over the next six to twelve months.</p>
+
+        <h2 id="what-it-does-now"><span class="h-num">06</span><span>What it does now</span></h2>
+        <p>It runs itself at 18:00 every weekday and emails me a short synthesized read: the watchlist first, then fresh leaders by trajectory, then what’s rolling over, then whether the separate groups agree on a theme. It’s deterministic, computed from rules, with no AI writing the analysis.</p>
+        <p>If you want the operating manual — the patterns I read and the order I read them in — that’s the companion piece, “How to Read the Scanner.” This one was the origin story: where it came from, and why the first thing I show you is the test that failed.</p>
+
+        <p class="is-muted"><em>King Nuggets is an independent research and educational publication. Everything here is for informational and educational purposes only and reflects my personal analysis. Nothing here is investment advice, a recommendation, or a solicitation to buy or sell any security. Individual securities are named only to illustrate methods and patterns. Any historical or backtested figures are hypothetical and do not guarantee future results. I may hold positions in securities mentioned. Do your own research and consult a licensed professional before making any investment decision.</em></p>
+
+        <footer class="backing">
+          <div class="backing__label">Source</div>
+          <div class="backing__grid">
+            <div>
+              <div class="rail__label">Published</div>
+              <div class="rail__value">2026-07-10</div>
+            </div>
+            <div>
+              <div class="rail__label">First appeared</div>
+              <div class="rail__value">Substack</div>
+            </div>
+            <div>
+              <div class="rail__label">Live board</div>
+              <a class="rail__value" href="../../sctr/">SCTR board →</a>
+            </div>
+          </div>
+          <a class="btn" href="https://kingnuggets.substack.com/p/sctr-scanner">Read on Substack ↗</a>
+        </footer>
+      </div>
+
+      <aside class="contents" aria-label="Contents">
+        <div class="contents__label">Contents</div>
+        <ul class="contents__list">
+          <li><a href="#the-number-stockcharts-already-had">01 — The number StockCharts already had</a></li>
+          <li><a href="#so-i-rebuilt-it">02 — So I rebuilt it</a></li>
+          <li><a href="#the-thing-i-had-backwards">03 — The thing I had backwards</a></li>
+          <li><a href="#the-seam-that-makes-it-mine">04 — The seam that makes it mine</a></li>
+          <li><a href="#the-number-that-didnt-work">05 — The number that didn’t work</a></li>
+          <li><a href="#what-it-does-now">06 — What it does now</a></li>
+        </ul>
+      </aside>
+    </div>
+
+  </article>
+</main>
+
+<footer class="site-foot">
+  <div class="shell site-foot__inner">
+    <div class="site-foot__mark">
+      <span class="site-foot__name">King Nuggets</span>
+      <span class="site-foot__sub">/ Lab</span>
+    </div>
+    <div class="site-foot__meta">
+      <span>Updated 2026-09-26</span>
+      <a href="https://kingnuggets.com">kingnuggets.com ↗</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

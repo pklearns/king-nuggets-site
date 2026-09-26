@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Article — King Nuggets Lab</title>
-<meta name="description" content="The long-form entry template: prose at a readable measure, verbatim terminal output, inline evidence callouts, and a backing archive reference.">
+<meta name="description" content="Long-form Lab entries: what was built, what was tested, and what did not work.">
 <meta name="robots" content="noindex">
 <meta name="color-scheme" content="dark">
 
@@ -29,112 +29,46 @@
 
 <nav class="secnav" aria-label="Lab sections">
   <div class="shell secnav__inner">
-    <a href="../"><span class="secnav__num">01</span><span>Index</span></a>
+    <a href="../"><span class="secnav__num">01</span><span>Dashboard</span></a>
     <a href="../status/"><span class="secnav__num">02</span><span>Status</span></a>
-    <a href="./" aria-current="page"><span class="secnav__num">03</span><span>Article</span></a>
-    <a href="../archive/"><span class="secnav__num">04</span><span>Archive</span></a>
-    <a href="../dashboard/"><span class="secnav__num">05</span><span>Dashboard</span></a>
+    <a href="../ratio-board/"><span class="secnav__num">03</span><span>Ratio board</span></a>
+    <a href="../sctr/"><span class="secnav__num">04</span><span>SCTR board</span></a>
+    <a href="./" aria-current="page"><span class="secnav__num">05</span><span>Article</span></a>
     <a href="../objectives-and-scope/"><span class="secnav__num">06</span><span>Objectives and Scope</span></a>
-    <a href="../sctr/"><span class="secnav__num">07</span><span>SCTR board</span></a>
-    <a href="../ratio-board/"><span class="secnav__num">08</span><span>Ratio board</span></a>
+    <a href="../archive/"><span class="secnav__num">07</span><span>Archive</span></a>
+    <a href="../entries/"><span class="secnav__num">08</span><span>Index</span></a>
   </div>
 </nav>
 
 <main class="shell page-main" id="main">
-  <article>
 
-    <header class="article__head">
-      <div class="article__meta">
-        <span>§ 03 — Article</span>
-        <span class="is-running">■ Running</span>
-        <span>[DATE]</span>
-        <span>Sample — illustrative</span>
-      </div>
-      <h1 class="article__title">Sample article title — illustrative</h1>
-      <p class="article__standfirst">Standfirst slot. Two sentences at most, sentence case, stating what was built and what the reader can verify. It does not preview a conclusion the body cannot support.</p>
-    </header>
+  <section class="plain-head">
+    <div class="sect-id">§ 05 — Article</div>
+    <h1 class="page-title">Long-form entries: what was built, and what the evidence says.</h1>
+    <p class="lede">Each article states what a system does, what was tested, and what did not work. Newest first.</p>
+  </section>
 
-    <div class="article__body">
-      <div class="prose">
-        <p>Body copy runs at this measure throughout, sentence case, one column. The paragraphs on this page describe the slot they occupy rather than carry example findings, so that no number on the page can be mistaken for a result.</p>
-        <p class="is-muted is-spaced">Where the finished article would quote a figure, this template prints an em dash. Where it would name a date, it prints a bracketed token.</p>
-
-        <h2 id="section-heading"><span class="h-num">01</span><span>Section heading, sentence case</span></h2>
-        <p>Sections are numbered in mono and set in the serif. The serif never sets a number; the number is always the mono element beside it.</p>
-
-        <figure class="term">
-          <div class="term__frame">
-            <div class="term__bar">
-              <span>Terminal — verbatim</span><span>Sample — illustrative</span>
-            </div>
-            <div class="term__scroll">
-<pre class="term__body"><span class="term__line">$ [COMMAND]</span>
-<span class="term__line">  loaded   —</span>
-<span class="term__line">  rows     —</span>
-<span class="term__line">  tests    —</span>
-<span class="term__line">  elapsed  —</span>
-<span class="term__line">  status   OK</span>
-<span class="term__line">$ [COMMAND] --verify --print-columns --no-truncate --emit=jsonl --since=[DATE]</span>
-<span class="term__line">  verified —</span></pre>
-            </div>
-            <div class="term__foot">
-              <span>Exit — </span>
-              <span>Elapsed — </span>
-              <span>Host [SYSTEM NAME]</span>
-            </div>
-          </div>
-          <figcaption class="term__caption">Fig. — Output is never truncated; long lines scroll.</figcaption>
-        </figure>
-
-        <h2 id="inline-evidence"><span class="h-num">02</span><span>Inline evidence</span></h2>
-        <p>A claim in the prose can carry its evidence directly beneath it. The callout holds command output verbatim, unedited, and is marked as evidence rather than as illustration.</p>
-
-        <aside class="evidence" aria-label="Evidence — verbatim output">
-          <div class="evidence__label">Evidence — verbatim output</div>
-          <div class="evidence__scroll">
-<pre class="evidence__body">$ [COMMAND]
-  assert  —  expected —  actual —  PASS</pre>
-          </div>
-          <div class="evidence__stamp">Captured [DATE] · commit —</div>
-        </aside>
-
-        <p>Inline code such as <code>--no-truncate</code> stays in mono and stays inside the sentence. Mono is never used for a sentence of its own.</p>
-
-        <blockquote class="pullquote">
-          <p>Pull quote slot. Serif, no quotation marks, no attribution unless the source is named in the body.</p>
-        </blockquote>
-
-        <footer class="backing">
-          <div class="backing__label">Backing archive</div>
-          <div class="backing__grid">
-            <div>
-              <div class="rail__label">Commit</div>
-              <div class="rail__value">—</div>
-            </div>
-            <div>
-              <div class="rail__label">Package</div>
-              <div class="rail__value">—</div>
-            </div>
-            <div>
-              <div class="rail__label">Verified</div>
-              <div class="rail__value">[DATE]</div>
-            </div>
-          </div>
-          <a class="btn" href="https://github.com/pklearns/king-nuggets-lab">Open in archive ↗</a>
-        </footer>
-      </div>
-
-      <aside class="contents" aria-label="Contents">
-        <div class="contents__label">Contents</div>
-        <ul class="contents__list">
-          <li><a class="is-current" href="#section-heading">01 — Section heading</a></li>
-          <li><a href="#inline-evidence">02 — Inline evidence</a></li>
-          <li>—</li>
-        </ul>
-      </aside>
+  <section class="entries">
+    <div class="entries__head">
+      <h2 class="entries__title">Articles</h2>
+      <span class="mono-note">1 published</span>
     </div>
 
-  </article>
+    <a class="entry" href="sctr-scanner/">
+      <div class="entry__date">2026-07-10</div>
+      <div>
+        <div class="entry__title">SCTR Scanner</div>
+        <div class="entry__summary">I rebuilt the StockCharts Technical Rank from raw data so I could test it. What I found is why I lead with the number that didn’t work.</div>
+      </div>
+      <div class="entry__state entry__state--running">■ Running</div>
+    </a>
+
+    <div class="entries__foot">
+      <span class="mono-note">End of list — no further articles published</span>
+      <a href="../sctr/">SCTR board →</a>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-foot">
@@ -144,7 +78,7 @@
       <span class="site-foot__sub">/ Lab</span>
     </div>
     <div class="site-foot__meta">
-      <span>Updated [DATE]</span>
+      <span>Updated 2026-09-26</span>
       <a href="https://kingnuggets.com">kingnuggets.com ↗</a>
     </div>
   </div>
