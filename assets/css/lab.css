@@ -1215,3 +1215,89 @@
 @media (forced-colors: active) {
   .board tbody td.board__step { background-color: Canvas; color: CanvasText; }
 }
+
+/* ==========================================================================
+   Ratio Regime Board — summary-first layout (Board v3). Classes emitted by
+   the generator for the summary, the collapsed details, method note and
+   history. Built only from the tokens and patterns above: serif section
+   titles as in .prose h2, mono labels as in .legend__term, rules as in
+   .legend. No new colours.
+   ========================================================================== */
+.summary,
+.method-note,
+.history {
+  margin-top: 64px;
+  border-top: 1px solid var(--kn-rule-strong);
+  padding-top: 32px;
+}
+.summary__title {
+  font-family: var(--kn-serif);
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+.summary__headline {
+  font-family: var(--kn-serif);
+  font-size: 22px;
+  line-height: 1.4;
+  color: var(--kn-text);
+  margin: 0 0 8px;
+}
+.summary__block {
+  padding: 24px 0 20px;
+  border-top: 1px solid var(--kn-rule);
+}
+.summary__headline + .summary__block { margin-top: 24px; }
+.summary__label {
+  font-family: var(--kn-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--kn-muted);
+  margin: 0 0 12px;
+  font-weight: 400;
+}
+.summary__list {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.summary__list li + li { margin-top: 4px; }
+.summary__tilt {
+  font-family: var(--kn-mono);
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  color: var(--kn-text);
+  margin: 0 0 8px;
+}
+.summary__block .mono-note { margin: 0 0 12px; }
+.method-note .legend__def { max-width: 72ch; }
+.history .mono-note { margin: 0 0 16px; }
+
+/* Details: collapsed by default; the toggle reads like a legend label. */
+.details {
+  margin-top: 64px;
+  border-top: 1px solid var(--kn-rule-strong);
+  padding-top: 24px;
+}
+.details__toggle {
+  cursor: pointer;
+  font-family: var(--kn-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--kn-muted);
+}
+.details__toggle:hover { color: var(--kn-text); }
+.details__toggle:focus-visible {
+  outline: 2px solid var(--kn-accent);
+  outline-offset: 3px;
+}
+.details[open] > .details__toggle { margin-bottom: 24px; }
+
+@media (max-width: 620px) {
+  .summary__title   { font-size: 24px; }
+  .summary__headline { font-size: 19px; }
+}
