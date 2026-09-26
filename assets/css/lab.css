@@ -1387,3 +1387,12 @@
 }
 .dash--pair > .dash__col { margin-bottom: 24px; }
 .board.board--watch { min-width: 460px; }
+
+/* Status board: the In build state sits between Running and Specced, so its
+   indent sits between theirs. A linked system name keeps the text colour. */
+.board__system--building { font-weight: 500; font-size: 16px; padding-left: 12px; }
+.lab a.board__system { color: var(--kn-text); }
+.legend.legend--four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 860px) {
+  .legend.legend--four { grid-template-columns: minmax(0, 1fr); }
+}

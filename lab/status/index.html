@@ -46,16 +46,16 @@
     <div class="split-head__prose">
       <div class="sect-id">§ 02 — Status</div>
       <h1 class="page-title">Every system, its state, and the evidence for it.</h1>
-      <p class="lede">Three states, in order of how much can be claimed for them. A system moves up this table only when evidence is attached, and down it the moment evidence goes stale.</p>
+      <p class="lede">Four states, in order of how much can be claimed for them. A system moves up this table only when evidence is attached, and down it the moment evidence goes stale.</p>
     </div>
     <aside class="rail" aria-label="Board summary">
       <div>
         <div class="rail__label">Board verified</div>
-        <div class="rail__value">[DATE]</div>
+        <div class="rail__value">2026-09-26</div>
       </div>
       <div>
-        <div class="rail__label">Rows below</div>
-        <div class="rail__value">Sample — illustrative</div>
+        <div class="rail__label">Systems listed</div>
+        <div class="rail__value">4</div>
       </div>
     </aside>
   </section>
@@ -76,31 +76,35 @@
           <td colspan="4">■ Running — in production, evidence required</td>
         </tr>
         <tr>
-          <td><span class="board__system">SCTR</span></td>
+          <td><a class="board__system" href="../sctr/">SCTR board</a></td>
           <td class="board__state board__state--running">■ Running</td>
-          <td class="board__evidence board__evidence--present">5.2M rows · 331 tests · nightly at 18:00 weekdays</td>
-          <td class="board__verified">[DATE]</td>
+          <td class="board__evidence board__evidence--present">5.5M panel rows · 201 tests · scanner nightly at 18:00 weekdays, board published after it · latest board 2026-09-25</td>
+          <td class="board__verified">2026-09-26</td>
         </tr>
         <tr>
-          <td><span class="board__system board__system--muted">[SYSTEM NAME]</span></td>
+          <td><a class="board__system" href="../ratio-board/">Ratio board</a></td>
           <td class="board__state board__state--running">■ Running</td>
-          <td class="board__evidence">— evidence slot: row count · test count · schedule</td>
-          <td class="board__verified">[DATE]</td>
+          <td class="board__evidence board__evidence--present">81 symbols and ratios, 80 scored · weekly on the Friday close, published by hand · latest board week ending 2026-09-25 · scorer not yet under version control, no automated tests</td>
+          <td class="board__verified">2026-09-26</td>
+        </tr>
+
+        <tr class="board__group">
+          <td colspan="4">◧ In build — code exists, not yet run on real data</td>
+        </tr>
+        <tr>
+          <td><span class="board__system board__system--building">Keller trend model</span></td>
+          <td class="board__state">◧ In build</td>
+          <td class="board__evidence board__evidence--present">Independent replication of David Keller’s three-timeframe weekly trend model; not affiliated · code and 21 tests on synthetic data · not yet run on real prices · waiting on a verified weekly price source</td>
+          <td class="board__verified">2026-09-26</td>
         </tr>
 
         <tr class="board__group">
           <td colspan="4">□ Specced — designed, not built</td>
         </tr>
         <tr>
-          <td><span class="board__system board__system--specced">[SYSTEM NAME]</span></td>
+          <td><span class="board__system board__system--specced">Cycle dashboard</span></td>
           <td class="board__state">□ Specced</td>
-          <td class="board__evidence">Spec only. No evidence permitted until built.</td>
-          <td class="board__verified">—</td>
-        </tr>
-        <tr>
-          <td><span class="board__system board__system--specced">[SYSTEM NAME]</span></td>
-          <td class="board__state">□ Specced</td>
-          <td class="board__evidence">Spec only. No evidence permitted until built.</td>
+          <td class="board__evidence">Spec only. Withheld — gated on verified cycle anchor inputs.</td>
           <td class="board__verified">—</td>
         </tr>
 
@@ -108,20 +112,24 @@
           <td colspan="4">— Parked — deliberately deferred, reason stated</td>
         </tr>
         <tr>
-          <td><span class="board__system board__system--parked">[SYSTEM NAME]</span></td>
+          <td><span class="board__system board__system--parked">—</span></td>
           <td class="board__state">— Parked</td>
-          <td class="board__evidence">Reason — required, one sentence, stated in full.</td>
+          <td class="board__evidence">No parked system is listed yet.</td>
           <td class="board__verified">—</td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <section class="legend" aria-labelledby="legend-heading">
+  <section class="legend legend--four" aria-labelledby="legend-heading">
     <h2 class="sr-only" id="legend-heading">State legend</h2>
     <div class="legend__item">
       <h3 class="legend__term legend__term--running">■ Running</h3>
       <p class="legend__def">In production. A row may only sit here with evidence attached and a verification date inside the current window.</p>
+    </div>
+    <div class="legend__item">
+      <h3 class="legend__term">◧ In build</h3>
+      <p class="legend__def">Code and tests exist; the system has not yet run on real data. Evidence is limited to what the tests show.</p>
     </div>
     <div class="legend__item">
       <h3 class="legend__term">□ Specced</h3>
@@ -143,7 +151,7 @@
       <span class="site-foot__sub">/ Lab</span>
     </div>
     <div class="site-foot__meta">
-      <span>Updated [DATE]</span>
+      <span>Updated 2026-09-26</span>
       <a href="https://kingnuggets.com">kingnuggets.com ↗</a>
     </div>
   </div>
