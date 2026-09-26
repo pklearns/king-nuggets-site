@@ -1301,3 +1301,77 @@
   .summary__title   { font-size: 24px; }
   .summary__headline { font-size: 19px; }
 }
+
+/* ==========================================================================
+   § 01 — Dashboard. Panels that excerpt the boards and the latest article.
+   Built from the tokens and patterns above; no new colours.
+   ========================================================================== */
+.secnav a[aria-current="true"] { color: var(--kn-accent); }
+
+.dash { display: grid; gap: 48px; }
+.dash--pair  { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.dash--three { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.dash__col { min-width: 0; }
+
+.dash > .dash__panel {
+  margin-top: 56px;
+  border-top: 1px solid var(--kn-rule-strong);
+  padding-top: 24px;
+  min-width: 0;
+}
+.dash__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.dash__title {
+  font-family: var(--kn-mono);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--kn-muted);
+  margin: 0;
+}
+.dash__head .summary__title { margin: 0; }
+.dash__more {
+  font-family: var(--kn-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.dash__section .dash--pair { gap: 32px; }
+.dash__section .dash--pair .summary__block { min-width: 0; }
+
+.lab a.dash__article {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px 0 24px;
+  color: inherit;
+}
+.lab a.dash__article:hover { text-decoration: none; }
+.lab a.dash__article:hover .entry__title { color: var(--kn-accent); }
+.dash__actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* Compact tables sit inside a panel column, so they neither force the
+   720px minimum of the full boards nor scroll the page sideways. */
+.board.board--compact { min-width: 0; width: 100%; }
+.board--compact abbr { text-decoration: none; }
+
+@media (max-width: 1040px) {
+  .dash--pair,
+  .dash--three { grid-template-columns: minmax(0, 1fr); }
+  .dash--pair { gap: 0; }
+  .dash__section .dash--pair { gap: 0; }
+}
+@media (max-width: 860px) {
+  .board.board--compact { min-width: 0; }
+}
+/* Status excerpt: the last column is prose, so it reads left like the rest. */
+.board.dash__status thead th:last-child,
+.board.dash__status tbody td:last-child { text-align: left; }
