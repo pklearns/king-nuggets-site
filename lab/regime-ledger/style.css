@@ -299,6 +299,14 @@ h1 {
   color: var(--kn-muted);
 }
 
+/* index.html: pointer to "About this record" plus the disclaimer. */
+.lede-note {
+  margin: 14px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--kn-muted);
+}
+
 /* Section identifier / mono eyebrow above a heading. */
 .eyebrow {
   font-family: var(--kn-mono);
@@ -468,28 +476,35 @@ dd {
    A change is text plus weight. No colour is applied here, and none may be.
    -------------------------------------------------------------------------- */
 
-.changes,
-.findings {
+.changes {
   margin: 0;
   padding-left: 20px;
 }
 
-.changes li,
-.findings li {
+/* index.html: the latest report's own summary line, and its link. */
+.summary {
+  margin: 22px 0 0;
+  max-width: 68ch;
+  font-size: 17px;
+  line-height: 1.68;
+}
+
+.read-more {
+  margin: 18px 0 0;
+  font-family: var(--kn-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.changes li {
   margin-block: 8px;
   font-size: 15px;
   line-height: 1.6;
 }
 
-.changes strong,
-.findings strong {
+.changes strong {
   font-weight: 600;
-}
-
-.findings li {
-  font-family: var(--kn-mono);
-  font-size: 13px;
-  line-height: 1.7;
 }
 
 .counts {
@@ -578,8 +593,12 @@ pre {
   letter-spacing: 0.04em;
 }
 
-pre + .detail-list {
-  margin-top: 16px;
+.record-note {
+  margin: 16px 0 0;
+  max-width: 68ch;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--kn-muted);
 }
 
 
