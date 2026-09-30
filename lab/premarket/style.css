@@ -1,0 +1,787 @@
+/* ==========================================================================
+   King Nuggets Pre-Market — Lab stylesheet
+
+   Copied from lab/regime-ledger/style.css on 2026-09-29 so the two unlisted
+   Lab records read as one family; section 14 at the end is the only addition.
+   Source of truth: second-brain-agent/templates/premarket_lab.css. The
+   publisher copies it to lab/premarket/style.css on every run.
+
+   Palette, type scale and spacing transcribed from the King Nuggets Lab
+   sheet (king-nuggets-site/assets/css/lab.css, dark block). This file is
+   self-contained: one local stylesheet, zero JavaScript, zero third-party
+   requests. The only url() references are relative paths to the Lab's
+   self-hosted woff2 files.
+
+   Colour is not a carrier of meaning. Direction and state are never encoded
+   in hue: a regime change is text plus weight, exactly as before. Cyan is the
+   single accent and it marks interface affordances only — links, focus rings,
+   and structural rules.
+
+   The Lab is dark only. There is no light token block and no theme toggle.
+   ========================================================================== */
+
+
+/* --------------------------------------------------------------------------
+   1. Typefaces — self-hosted, no third-party requests.
+
+   Sentient  — page headings and the masthead wordmark. Never sets a number.
+   Switzer   — body prose, UI, and every numeral (tabular lining figures).
+   DM Mono   — instrument furniture: field labels, identifiers, checksums,
+               timestamps, table headers, verbatim output. Never sets prose.
+
+   Paths are relative to THIS FILE and assume the dashboard is published at
+   /lab/premarket/, with the Lab's fonts already served from
+   /assets/fonts/. Opened over file:// the paths will not resolve and each
+   family falls back to its declared system stack; layout is unaffected.
+   -------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'Sentient';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../assets/fonts/Sentient-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Sentient';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../../assets/fonts/Sentient-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Switzer';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../assets/fonts/Switzer-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Switzer';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../../assets/fonts/Switzer-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Switzer';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../../assets/fonts/Switzer-Semibold.woff2') format('woff2');
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../assets/fonts/DMMono-Regular-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../assets/fonts/DMMono-Regular-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../../assets/fonts/DMMono-Medium-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../../assets/fonts/DMMono-Medium-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* --------------------------------------------------------------------------
+   2. Tokens — the Lab dark block, carried over unchanged.
+   -------------------------------------------------------------------------- */
+
+:root {
+  --kn-ground:      #131415;
+  --kn-panel:       #191b1c;
+  --kn-well:        #0e0f10;
+  --kn-text:        #eae7e2;
+  --kn-muted:       #9ea1a4;
+  --kn-faint:       #8a8e91;
+  --kn-rule:        rgba(234,231,226,0.14);
+  --kn-rule-strong: rgba(234,231,226,0.32);
+  --kn-accent:      #4fd0e2;
+  --kn-accent-dim:  rgba(79,208,226,0.28);
+
+  --kn-serif: 'Sentient', Georgia, 'Times New Roman', serif;
+  --kn-sans:  'Switzer', ui-sans-serif, system-ui, sans-serif;
+  --kn-mono:  'DM Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  /* Layout constants. Every spacing value below is a multiple of 4px so that
+     rules, labels and baselines snap to one grid. */
+  --kn-shell:  1240px;
+  --kn-gutter: 32px;
+
+  color-scheme: dark;
+}
+
+
+/* --------------------------------------------------------------------------
+   3. Base
+   -------------------------------------------------------------------------- */
+
+html {
+  background: var(--kn-ground);
+  color: var(--kn-text);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--kn-ground);
+  color: var(--kn-text);
+  font-family: var(--kn-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  font-variant-numeric: tabular-nums lining-nums;
+  font-feature-settings: 'tnum' 1, 'lnum' 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--kn-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--kn-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* One visible focus treatment, everywhere, in the single accent. */
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--kn-accent);
+  outline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* Tabular lining figures on every number that sits in a column. */
+table,
+.checksum {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   4. Shell — masthead, main, footer share one measure and one gutter.
+   -------------------------------------------------------------------------- */
+
+.site-header > *,
+.disclaimer,
+main,
+footer > * {
+  max-width: var(--kn-shell);
+  margin-inline: auto;
+  padding-inline: var(--kn-gutter);
+}
+
+.site-header {
+  border-bottom: 1px solid var(--kn-rule-strong);
+  background: var(--kn-ground);
+}
+
+.site-header > * {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 76px;
+  flex-wrap: wrap;
+}
+
+a.site-title {
+  font-family: var(--kn-serif);
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--kn-text);
+}
+
+a.site-title:hover {
+  color: var(--kn-text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--kn-rule-strong);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 28px;
+}
+
+nav a {
+  font-family: var(--kn-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+main {
+  padding-block: 0 120px;
+}
+
+/* The Lab's standard disclaimer, once per page, directly under the masthead. */
+.disclaimer {
+  margin-block: 14px 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--kn-muted);
+}
+
+
+/* --------------------------------------------------------------------------
+   5. Page head and instrument furniture
+   -------------------------------------------------------------------------- */
+
+h1 {
+  font-family: var(--kn-serif);
+  font-size: 44px;
+  line-height: 1.16;
+  letter-spacing: -0.01em;
+  margin: 0 0 24px;
+  max-width: 24ch;
+  text-wrap: balance;
+}
+
+.lede {
+  margin: 0;
+  max-width: 68ch;
+  font-size: 17px;
+  line-height: 1.68;
+  color: var(--kn-muted);
+}
+
+/* index.html: pointer to "About this record" plus the disclaimer. */
+.lede-note {
+  margin: 14px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--kn-muted);
+}
+
+/* Section identifier / mono eyebrow above a heading. */
+.eyebrow {
+  font-family: var(--kn-mono);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--kn-faint);
+  margin: 0 0 28px;
+}
+
+.page-head {
+  padding: 72px 0 44px;
+  border-bottom: 1px solid var(--kn-rule-strong);
+}
+
+
+/* --------------------------------------------------------------------------
+   6. Header block — index.html only.
+
+   Prose at a readable measure, with a mono label above it and the same
+   hairline vocabulary as the rest of the page. The accent appears here only
+   as the left-hand structural rule, never on the words.
+   -------------------------------------------------------------------------- */
+
+.header-block {
+  margin-top: 56px;
+  border-left: 2px solid var(--kn-accent-dim);
+  padding: 4px 0 4px 28px;
+  max-width: 76ch;
+}
+
+.header-block__title {
+  font-family: var(--kn-serif);
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+  margin: 0 0 16px;
+  max-width: 28ch;
+  text-wrap: balance;
+}
+
+.header-block p {
+  margin: 0 0 16px;
+  max-width: 68ch;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--kn-muted);
+}
+
+.header-block p:last-child {
+  margin-bottom: 0;
+}
+
+/* The one-line pointer back to the header block, used on both history pages. */
+.header-block-link {
+  margin: 28px 0 0;
+  font-family: var(--kn-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+
+/* --------------------------------------------------------------------------
+   7. Report sections and field grids
+   -------------------------------------------------------------------------- */
+
+.report-section,
+section {
+  margin-top: 56px;
+}
+
+.report-section {
+  border: 1px solid var(--kn-rule);
+  background: var(--kn-panel);
+  padding: 28px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--kn-rule-strong);
+}
+
+.section-heading h2 {
+  font-family: var(--kn-serif);
+  font-size: 29px;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.section-heading span {
+  font-family: var(--kn-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--kn-faint);
+  white-space: nowrap;
+}
+
+section > h2 {
+  font-family: var(--kn-serif);
+  font-size: 29px;
+  line-height: 1.25;
+  margin: 0 0 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--kn-rule-strong);
+}
+
+.report-section h3 {
+  font-family: var(--kn-mono);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--kn-muted);
+  margin: 32px 0 12px;
+}
+
+/* Field grid. Hairline cells, mono label over the value — the Lab's rail
+   label/value pairing laid out as a panel. */
+.facts,
+.detail-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0;
+  margin: 24px 0 0;
+  border-top: 1px solid var(--kn-rule);
+  border-left: 1px solid var(--kn-rule);
+}
+
+.facts div,
+.detail-list div {
+  padding: 16px;
+  border-right: 1px solid var(--kn-rule);
+  border-bottom: 1px solid var(--kn-rule);
+  min-width: 0;
+}
+
+dt {
+  font-family: var(--kn-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--kn-faint);
+}
+
+dd {
+  margin: 8px 0 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--kn-text);
+  overflow-wrap: anywhere;
+}
+
+
+/* --------------------------------------------------------------------------
+   8. Change and finding lists
+
+   A change is text plus weight. No colour is applied here, and none may be.
+   -------------------------------------------------------------------------- */
+
+.changes {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* index.html: the latest report's own summary line, and its link. */
+.summary {
+  margin: 22px 0 0;
+  max-width: 68ch;
+  font-size: 17px;
+  line-height: 1.68;
+}
+
+.read-more {
+  margin: 18px 0 0;
+  font-family: var(--kn-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.changes li {
+  margin-block: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.changes strong {
+  font-weight: 600;
+}
+
+.counts {
+  font-weight: 600;
+}
+
+
+/* --------------------------------------------------------------------------
+   9. History board — density surface, mono headers, hairline columns.
+   -------------------------------------------------------------------------- */
+
+.table-wrap {
+  overflow-x: auto;
+  margin-top: 52px;
+  border-top: 1px solid var(--kn-rule-strong);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 70rem;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  border-right: 1px solid var(--kn-rule);
+}
+
+th:last-child,
+td:last-child {
+  border-right: 0;
+}
+
+thead th {
+  padding: 12px 16px 8px;
+  border-bottom: 1px solid var(--kn-rule-strong);
+  font-family: var(--kn-mono);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--kn-faint);
+}
+
+tbody td {
+  padding: 12px 16px;
+  border-top: 1px solid var(--kn-rule);
+  font-size: 15px;
+}
+
+tbody tr:hover td {
+  background: var(--kn-panel);
+}
+
+tbody td strong {
+  font-weight: 600;
+}
+
+
+/* --------------------------------------------------------------------------
+   10. Verbatim output — the Lab terminal well.
+
+   Source Markdown and normalized JSON are shown exactly as stored. Nothing
+   in here reformats, highlights or truncates them.
+   -------------------------------------------------------------------------- */
+
+pre {
+  margin: 0;
+  padding: 16px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  border: 1px solid var(--kn-rule);
+  background: var(--kn-well);
+  color: var(--kn-text);
+  font-family: var(--kn-mono);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.checksum {
+  font-family: var(--kn-mono);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+.record-note {
+  margin: 16px 0 0;
+  max-width: 68ch;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--kn-muted);
+}
+
+
+/* --------------------------------------------------------------------------
+   10a. Rendered report body — presentation only.
+
+   The report's own headings sit under the page's "Report body" heading, so
+   they are stepped down in size. Wide tables scroll inside their own box
+   instead of widening the page at 375 px.
+   -------------------------------------------------------------------------- */
+
+.report-body > :first-child {
+  margin-top: 0;
+}
+
+.report-body h1,
+.report-body h2,
+.report-body h3,
+.report-body h4 {
+  margin: 28px 0 10px;
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.report-body h1 {
+  font-size: 20px;
+}
+
+.report-body ul,
+.report-body ol {
+  padding-left: 22px;
+}
+
+.report-body table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.report-body code {
+  font-family: var(--kn-mono);
+  font-size: 13px;
+}
+
+
+/* --------------------------------------------------------------------------
+   11. Footer
+   -------------------------------------------------------------------------- */
+
+footer {
+  border-top: 1px solid var(--kn-rule-strong);
+}
+
+footer > * {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 28px;
+  padding-bottom: 56px;
+  font-family: var(--kn-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--kn-faint);
+}
+
+
+/* --------------------------------------------------------------------------
+   12. Responsive — the board scrolls rather than crushing its columns.
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 860px) {
+  :root {
+    --kn-gutter: 20px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .header-block__title,
+  .section-heading h2,
+  section > h2 {
+    font-size: 24px;
+  }
+
+  .page-head {
+    padding-top: 48px;
+  }
+
+  .report-section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .site-header > * {
+    min-height: 0;
+    gap: 0 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  a.site-title {
+    font-size: 20px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .header-block {
+    padding-left: 20px;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   13. Print — structure only. The palette is dark-only by design and is not
+   restated here; the browser's own print handling applies.
+   -------------------------------------------------------------------------- */
+
+@media print {
+  nav {
+    display: none;
+  }
+
+  .report-section,
+  pre,
+  .table-wrap {
+    break-inside: avoid;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   14. Pre-Market additions.
+
+   Quote tables are narrow, so they drop the history board's 70rem minimum.
+   Direction is the sign in the text; no colour is applied to a change.
+   -------------------------------------------------------------------------- */
+
+.quotes {
+  margin-top: 24px;
+}
+
+.quotes table {
+  min-width: 0;
+}
+
+.quotes td:nth-child(n+2),
+.quotes th:nth-child(n+2) {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.headlines li {
+  margin-block: 14px;
+}
+
+.headlines .meta {
+  font-family: var(--kn-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--kn-faint);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
