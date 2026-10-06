@@ -1,0 +1,4069 @@
+{
+  "asof": "2026-10-02",
+  "generated_utc": "2026-10-03T12:09:42Z",
+  "disclaimer": "Research, not investment advice.",
+  "method_note": "Ratio universe and Ichimoku 5-box scoring adapted from techniques Chris Ciovacco (Ciovacco Capital) has demonstrated publicly. Independent implementation, not affiliated.",
+  "grades_version": "v1 (2026-09-26)",
+  "summary": {
+    "headline": {
+      "text": "Risk-on · Growth-led · Narrow breadth · Credit strong · Yields rising",
+      "parts": [
+        {
+          "test": "risk",
+          "label": "Risk-on",
+          "in_headline": true,
+          "count": 0,
+          "scored": 6,
+          "total": 6
+        },
+        {
+          "test": "leadership",
+          "label": "Growth-led",
+          "in_headline": true,
+          "count": 13,
+          "scored": 17,
+          "needed": 9
+        },
+        {
+          "test": "breadth",
+          "label": "Narrow breadth",
+          "in_headline": true,
+          "symbol": "AMEX:RSP/AMEX:SPY",
+          "cloud_W": 0
+        },
+        {
+          "test": "credit",
+          "label": "Credit strong",
+          "in_headline": true,
+          "symbol": "AMEX:JNK/NASDAQ:IEF",
+          "cloud_W": 5
+        },
+        {
+          "test": "rates",
+          "label": "Yields rising",
+          "in_headline": true,
+          "symbol": "TVC:US10Y",
+          "cloud_W": 5
+        }
+      ]
+    },
+    "key_readings": [
+      "Risk-off pressure: 0 of 6 risk-off ratios at weekly 3/5 or better (last week 0 of 6).",
+      "Growth leadership: 13 of 17 Growth leadership ratios at weekly 5/5 (last week 9 of 17).",
+      "Breadth: RSP/SPY weekly 0/5, monthly 0/5; IWM/SPY weekly 1/5, monthly 1/5; IJR/SPY weekly 1/5, monthly 0/5.",
+      "Credit: JNK/IEF weekly 5/5, monthly 5/5, 200-week above/rising; JNK weekly 0/5, monthly 2/5, 200-week below/rising; BKLN weekly 1/5, monthly 0/5, 200-week below/falling; LQD weekly 0/5, monthly 1/5, 200-week below/falling.",
+      "Rates: US10Y weekly 5/5, monthly 5/5; IEF weekly 0/5, monthly 0/5.",
+      "Risk-on tilt: 34 risk-on aligned · 14 risk-off aligned · 7 mixed (1 n/a; 3 rates rows excluded; Foreign and Real assets not counted, 21 rows)."
+    ],
+    "top_changes": [
+      {
+        "symbol": "NASDAQ:QQQ/AMEX:VTV",
+        "display": "QQQ/VTV",
+        "field": "cloud_W",
+        "from": 3,
+        "to": 5,
+        "event": "into 5/5",
+        "text": "Cloud W: 3/5 → 5/5 (into 5/5)"
+      },
+      {
+        "symbol": "NASDAQ:AIQ/AMEX:SPY",
+        "display": "AIQ/SPY",
+        "field": "cloud_W",
+        "from": 3,
+        "to": 5,
+        "event": "into 5/5",
+        "text": "Cloud W: 3/5 → 5/5 (into 5/5)"
+      },
+      {
+        "symbol": "NASDAQ:QQQ/AMEX:SPY",
+        "display": "QQQ/SPY",
+        "field": "cloud_W",
+        "from": 4,
+        "to": 5,
+        "event": "into 5/5",
+        "text": "Cloud W: 4/5 → 5/5 (into 5/5)"
+      },
+      {
+        "symbol": "NASDAQ:NDX/SP:SPX",
+        "display": "NDX/SPX",
+        "field": "cloud_W",
+        "from": 4,
+        "to": 5,
+        "event": "into 5/5",
+        "text": "Cloud W: 4/5 → 5/5 (into 5/5)"
+      },
+      {
+        "symbol": "AMEX:XLF",
+        "display": "XLF",
+        "field": "cloud_W",
+        "from": 5,
+        "to": 4,
+        "event": "out of 5/5",
+        "text": "Cloud W: 5/5 → 4/5 (out of 5/5)"
+      }
+    ],
+    "changes_total": 28,
+    "what_would_change": [
+      {
+        "test": "risk",
+        "label": "Risk-on",
+        "text": "Risk-on: risk-off ratios at weekly 3/5 or better now 0 of 6 scored. Risk-on at 0–1, Cautious at 2–3, Risk-off at 4 or more."
+      },
+      {
+        "test": "leadership",
+        "label": "Growth-led",
+        "text": "Growth-led: 13 of 17 at weekly 5/5 (Growth-led needs 9). Leadership mixed at 8 or fewer."
+      },
+      {
+        "test": "breadth",
+        "label": "Narrow breadth",
+        "text": "Narrow breadth: RSP/SPY weekly 0/5. Narrow breadth at 1/5 or less, Breadth neutral at 2/5–3/5, Broad breadth at 4/5 or more."
+      },
+      {
+        "test": "credit",
+        "label": "Credit strong",
+        "text": "Credit strong: JNK/IEF weekly 5/5. Credit weak at 1/5 or less, Credit neutral at 2/5–3/5, Credit strong at 4/5 or more."
+      },
+      {
+        "test": "rates",
+        "label": "Yields rising",
+        "text": "Rates: US10Y weekly 5/5 (in the headline as \"Yields rising\"). 4/5 or more adds \"Yields rising\", 1/5 or less adds \"Yields falling\", 2/5–3/5 adds nothing."
+      }
+    ],
+    "risk_on_tilt": {
+      "risk_on": 34,
+      "risk_off": 14,
+      "mixed": 7,
+      "n/a": 1,
+      "excluded": 3,
+      "not_counted": 21,
+      "not_counted_sections": [
+        "Foreign",
+        "Real assets"
+      ],
+      "sections": {
+        "1 REGIME - INDICES & RATES": {
+          "direction": "Aligned up = risk-on; VIX inverted; US10Y, IEF, IEI excluded (rates)",
+          "alignment": {
+            "Aligned up": 5,
+            "Aligned down": 3,
+            "Pullback in uptrend": 2,
+            "Rally in downtrend": 0,
+            "Mixed": 0,
+            "n/a": 0
+          },
+          "risk_on": 5,
+          "risk_off": 0,
+          "mixed": 2,
+          "n/a": 0,
+          "excluded": 3,
+          "inverted": [
+            "TVC:VIX"
+          ],
+          "not_inverted": [],
+          "excluded_symbols": [
+            "TVC:US10Y",
+            "NASDAQ:IEF",
+            "NASDAQ:IEI"
+          ],
+          "counted": true
+        },
+        "2 FEAR GAUGES - CREDIT & DEFENSIVE": {
+          "direction": "Aligned down = risk-on; JNK/IEF not inverted (Aligned up = risk-on)",
+          "alignment": {
+            "Aligned up": 1,
+            "Aligned down": 13,
+            "Pullback in uptrend": 0,
+            "Rally in downtrend": 1,
+            "Mixed": 0,
+            "n/a": 0
+          },
+          "risk_on": 14,
+          "risk_off": 0,
+          "mixed": 1,
+          "n/a": 0,
+          "excluded": 0,
+          "inverted": [],
+          "not_inverted": [
+            "AMEX:JNK/NASDAQ:IEF"
+          ],
+          "excluded_symbols": [],
+          "counted": true
+        },
+        "3 GROWTH LEADERSHIP": {
+          "direction": "Aligned up = risk-on",
+          "alignment": {
+            "Aligned up": 15,
+            "Aligned down": 0,
+            "Pullback in uptrend": 0,
+            "Rally in downtrend": 0,
+            "Mixed": 1,
+            "n/a": 1
+          },
+          "risk_on": 15,
+          "risk_off": 0,
+          "mixed": 1,
+          "n/a": 1,
+          "excluded": 0,
+          "inverted": [],
+          "not_inverted": [],
+          "excluded_symbols": [],
+          "counted": true
+        },
+        "4 BREADTH & ROTATION": {
+          "direction": "Aligned up = risk-on",
+          "alignment": {
+            "Aligned up": 0,
+            "Aligned down": 14,
+            "Pullback in uptrend": 2,
+            "Rally in downtrend": 0,
+            "Mixed": 1,
+            "n/a": 0
+          },
+          "risk_on": 0,
+          "risk_off": 14,
+          "mixed": 3,
+          "n/a": 0,
+          "excluded": 0,
+          "inverted": [],
+          "not_inverted": [],
+          "excluded_symbols": [],
+          "counted": true
+        },
+        "5 FOREIGN": {
+          "direction": "not counted (alignment only)",
+          "alignment": {
+            "Aligned up": 4,
+            "Aligned down": 3,
+            "Pullback in uptrend": 3,
+            "Rally in downtrend": 0,
+            "Mixed": 1,
+            "n/a": 0
+          },
+          "risk_on": null,
+          "risk_off": null,
+          "mixed": null,
+          "n/a": null,
+          "excluded": null,
+          "inverted": [],
+          "not_inverted": [],
+          "excluded_symbols": [],
+          "counted": false
+        },
+        "6 REAL ASSETS": {
+          "direction": "not counted (alignment only)",
+          "alignment": {
+            "Aligned up": 0,
+            "Aligned down": 0,
+            "Pullback in uptrend": 6,
+            "Rally in downtrend": 2,
+            "Mixed": 2,
+            "n/a": 0
+          },
+          "risk_on": null,
+          "risk_off": null,
+          "mixed": null,
+          "n/a": null,
+          "excluded": null,
+          "inverted": [],
+          "not_inverted": [],
+          "excluded_symbols": [],
+          "counted": false
+        }
+      }
+    },
+    "history": {
+      "label": "reconstructed from current data (not the published record)",
+      "weeks": 26,
+      "rows": [
+        {
+          "week_ending": "2026-10-02",
+          "source": "current",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 13,
+          "growth_scored": 17,
+          "rsp_spy_W": 0,
+          "credit_W": 5,
+          "headline": "Risk-on · Growth-led · Narrow breadth · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-09-25",
+          "source": "published (v3 reissue)",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 9,
+          "growth_scored": 17,
+          "rsp_spy_W": 0,
+          "credit_W": 5,
+          "headline": "Risk-on · Growth-led · Narrow breadth · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-09-18",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 8,
+          "growth_scored": 17,
+          "rsp_spy_W": 2,
+          "credit_W": 5,
+          "headline": "Risk-on · Leadership mixed · Breadth neutral · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-09-11",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 7,
+          "growth_scored": 17,
+          "rsp_spy_W": 2,
+          "credit_W": 5,
+          "headline": "Risk-on · Leadership mixed · Breadth neutral · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-09-04",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 7,
+          "growth_scored": 17,
+          "rsp_spy_W": 2,
+          "credit_W": 5,
+          "headline": "Risk-on · Leadership mixed · Breadth neutral · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-08-28",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 7,
+          "growth_scored": 17,
+          "rsp_spy_W": 3,
+          "credit_W": 5,
+          "headline": "Risk-on · Leadership mixed · Breadth neutral · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-08-21",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 8,
+          "growth_scored": 17,
+          "rsp_spy_W": 3,
+          "credit_W": 5,
+          "headline": "Risk-on · Leadership mixed · Breadth neutral · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-08-14",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 12,
+          "growth_scored": 17,
+          "rsp_spy_W": 3,
+          "credit_W": 5,
+          "headline": "Risk-on · Growth-led · Breadth neutral · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-08-07",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 10,
+          "growth_scored": 17,
+          "rsp_spy_W": 2,
+          "credit_W": 5,
+          "headline": "Risk-on · Growth-led · Breadth neutral · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-07-31",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 6,
+          "growth_scored": 17,
+          "rsp_spy_W": 1,
+          "credit_W": 5,
+          "headline": "Risk-on · Leadership mixed · Narrow breadth · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-07-24",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 6,
+          "growth_scored": 17,
+          "rsp_spy_W": 2,
+          "credit_W": 5,
+          "headline": "Risk-on · Leadership mixed · Breadth neutral · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-07-17",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 7,
+          "growth_scored": 17,
+          "rsp_spy_W": 1,
+          "credit_W": 5,
+          "headline": "Risk-on · Leadership mixed · Narrow breadth · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-07-10",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 13,
+          "growth_scored": 17,
+          "rsp_spy_W": 0,
+          "credit_W": 5,
+          "headline": "Risk-on · Growth-led · Narrow breadth · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-07-03",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 13,
+          "growth_scored": 17,
+          "rsp_spy_W": 2,
+          "credit_W": 5,
+          "headline": "Risk-on · Growth-led · Breadth neutral · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-06-26",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 12,
+          "growth_scored": 17,
+          "rsp_spy_W": 2,
+          "credit_W": 5,
+          "headline": "Risk-on · Growth-led · Breadth neutral · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-06-19",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 13,
+          "growth_scored": 17,
+          "rsp_spy_W": 1,
+          "credit_W": 5,
+          "headline": "Risk-on · Growth-led · Narrow breadth · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-06-12",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 13,
+          "growth_scored": 17,
+          "rsp_spy_W": 1,
+          "credit_W": 5,
+          "headline": "Risk-on · Growth-led · Narrow breadth · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-06-05",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 13,
+          "growth_scored": 17,
+          "rsp_spy_W": 0,
+          "credit_W": 5,
+          "headline": "Risk-on · Growth-led · Narrow breadth · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-05-29",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 9,
+          "growth_scored": 17,
+          "rsp_spy_W": 0,
+          "credit_W": 5,
+          "headline": "Risk-on · Growth-led · Narrow breadth · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-05-22",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 9,
+          "growth_scored": 17,
+          "rsp_spy_W": 0,
+          "credit_W": 5,
+          "headline": "Risk-on · Growth-led · Narrow breadth · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-05-15",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 9,
+          "growth_scored": 17,
+          "rsp_spy_W": 0,
+          "credit_W": 4,
+          "headline": "Risk-on · Growth-led · Narrow breadth · Credit strong · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-05-08",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 9,
+          "growth_scored": 17,
+          "rsp_spy_W": 0,
+          "credit_W": 3,
+          "headline": "Risk-on · Growth-led · Narrow breadth · Credit neutral · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-05-01",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 7,
+          "growth_scored": 17,
+          "rsp_spy_W": 2,
+          "credit_W": 3,
+          "headline": "Risk-on · Leadership mixed · Breadth neutral · Credit neutral · Yields rising",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-04-24",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 7,
+          "growth_scored": 17,
+          "rsp_spy_W": 2,
+          "credit_W": 3,
+          "headline": "Risk-on · Leadership mixed · Breadth neutral · Credit neutral",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-04-17",
+          "source": "reconstructed",
+          "risk_off_count": 0,
+          "risk_off_scored": 6,
+          "growth_5of5": 3,
+          "growth_scored": 17,
+          "rsp_spy_W": 2,
+          "credit_W": 3,
+          "headline": "Risk-on · Leadership mixed · Breadth neutral · Credit neutral",
+          "note": ""
+        },
+        {
+          "week_ending": "2026-04-10",
+          "source": "reconstructed",
+          "risk_off_count": 1,
+          "risk_off_scored": 6,
+          "growth_5of5": 3,
+          "growth_scored": 17,
+          "rsp_spy_W": 3,
+          "credit_W": 4,
+          "headline": "Risk-on · Leadership mixed · Breadth neutral · Credit strong",
+          "note": ""
+        }
+      ]
+    },
+    "note_present": false
+  },
+  "regime_panel": {
+    "risk_off_pressure": {
+      "threshold": 3,
+      "count": 0,
+      "scored": 6,
+      "total": 6,
+      "counted": [],
+      "unavailable": [],
+      "rows": [
+        {
+          "symbol": "AMEX:BIL/AMEX:SPYG",
+          "cloud_W": 0,
+          "W_rising": false,
+          "counted": false,
+          "status": ""
+        },
+        {
+          "symbol": "NASDAQ:SHY/AMEX:SPYG",
+          "cloud_W": 0,
+          "W_rising": false,
+          "counted": false,
+          "status": ""
+        },
+        {
+          "symbol": "NASDAQ:IEF/AMEX:SPYG",
+          "cloud_W": 0,
+          "W_rising": false,
+          "counted": false,
+          "status": ""
+        },
+        {
+          "symbol": "AMEX:XLP/AMEX:XLK",
+          "cloud_W": 0,
+          "W_rising": false,
+          "counted": false,
+          "status": ""
+        },
+        {
+          "symbol": "AMEX:SPLV/AMEX:SPY",
+          "cloud_W": 0,
+          "W_rising": false,
+          "counted": false,
+          "status": ""
+        },
+        {
+          "symbol": "AMEX:AGG/AMEX:SPY",
+          "cloud_W": 0,
+          "W_rising": false,
+          "counted": false,
+          "status": ""
+        }
+      ],
+      "prior_week_count": 0,
+      "prior_week_scored": 6
+    },
+    "growth_leadership": {
+      "section": "3 GROWTH LEADERSHIP",
+      "count_5of5": 13,
+      "scored": 17,
+      "total": 17,
+      "at_5of5": [
+        "NASDAQ:QQQ/AMEX:SPY",
+        "NASDAQ:QQQ/AMEX:VTV",
+        "NASDAQ:NDX/SP:SPX",
+        "AMEX:XLK/AMEX:SPY",
+        "AMEX:XLK/AMEX:RSP",
+        "AMEX:SPYG/AMEX:SPY",
+        "AMEX:MGK/AMEX:RSP",
+        "NASDAQ:QTEC/AMEX:RSP",
+        "NASDAQ:AIQ/AMEX:SPY",
+        "NASDAQ:SMH/AMEX:SPY",
+        "AMEX:VGT/AMEX:SPY",
+        "AMEX:FTEC/AMEX:IWF",
+        "NASDAQ:ONEQ/AMEX:SPY"
+      ],
+      "unavailable": [],
+      "prior_week_count": 9,
+      "prior_week_scored": 17
+    },
+    "breadth": [
+      {
+        "symbol": "AMEX:RSP/AMEX:SPY",
+        "cloud_W": 0,
+        "W_rising": false,
+        "cloud_M": 0,
+        "M_rising": false,
+        "status": ""
+      },
+      {
+        "symbol": "AMEX:IWM/AMEX:SPY",
+        "cloud_W": 1,
+        "W_rising": false,
+        "cloud_M": 1,
+        "M_rising": true,
+        "status": ""
+      },
+      {
+        "symbol": "AMEX:IJR/AMEX:SPY",
+        "cloud_W": 1,
+        "W_rising": false,
+        "cloud_M": 0,
+        "M_rising": true,
+        "status": ""
+      }
+    ],
+    "credit": [
+      {
+        "symbol": "AMEX:JNK/NASDAQ:IEF",
+        "cloud_W": 5,
+        "W_rising": true,
+        "cloud_M": 5,
+        "M_rising": false,
+        "wk200": "above/rising",
+        "status": ""
+      },
+      {
+        "symbol": "AMEX:JNK",
+        "cloud_W": 0,
+        "W_rising": false,
+        "cloud_M": 2,
+        "M_rising": false,
+        "wk200": "below/rising",
+        "status": ""
+      },
+      {
+        "symbol": "AMEX:BKLN",
+        "cloud_W": 1,
+        "W_rising": true,
+        "cloud_M": 0,
+        "M_rising": false,
+        "wk200": "below/falling",
+        "status": ""
+      },
+      {
+        "symbol": "AMEX:LQD",
+        "cloud_W": 0,
+        "W_rising": false,
+        "cloud_M": 1,
+        "M_rising": false,
+        "wk200": "below/falling",
+        "status": ""
+      }
+    ],
+    "rates": [
+      {
+        "symbol": "TVC:US10Y",
+        "cloud_W": 5,
+        "W_rising": true,
+        "cloud_M": 5,
+        "M_rising": true,
+        "status": ""
+      },
+      {
+        "symbol": "NASDAQ:IEF",
+        "cloud_W": 0,
+        "W_rising": false,
+        "cloud_M": 0,
+        "M_rising": false,
+        "status": ""
+      }
+    ],
+    "alignment_by_section": {
+      "1 REGIME - INDICES & RATES": {
+        "Aligned up": 5,
+        "Aligned down": 3,
+        "Pullback in uptrend": 2,
+        "Rally in downtrend": 0,
+        "Mixed": 0,
+        "n/a": 0
+      },
+      "2 FEAR GAUGES - CREDIT & DEFENSIVE": {
+        "Aligned up": 1,
+        "Aligned down": 13,
+        "Pullback in uptrend": 0,
+        "Rally in downtrend": 1,
+        "Mixed": 0,
+        "n/a": 0
+      },
+      "3 GROWTH LEADERSHIP": {
+        "Aligned up": 15,
+        "Aligned down": 0,
+        "Pullback in uptrend": 0,
+        "Rally in downtrend": 0,
+        "Mixed": 1,
+        "n/a": 1
+      },
+      "4 BREADTH & ROTATION": {
+        "Aligned up": 0,
+        "Aligned down": 14,
+        "Pullback in uptrend": 2,
+        "Rally in downtrend": 0,
+        "Mixed": 1,
+        "n/a": 0
+      },
+      "5 FOREIGN": {
+        "Aligned up": 4,
+        "Aligned down": 3,
+        "Pullback in uptrend": 3,
+        "Rally in downtrend": 0,
+        "Mixed": 1,
+        "n/a": 0
+      },
+      "6 REAL ASSETS": {
+        "Aligned up": 0,
+        "Aligned down": 0,
+        "Pullback in uptrend": 6,
+        "Rally in downtrend": 2,
+        "Mixed": 2,
+        "n/a": 0
+      }
+    }
+  },
+  "changes": {
+    "prior_week": "2026-09-25",
+    "method": "prior week re-scored from this run's data cut at the prior Friday close",
+    "items": [
+      {
+        "symbol": "NASDAQ:IEI",
+        "field": "grade_long",
+        "from": "D",
+        "to": "F",
+        "event": "grade change"
+      },
+      {
+        "symbol": "AMEX:BKLN",
+        "field": "grade_medium",
+        "from": "C",
+        "to": "D",
+        "event": "grade change"
+      },
+      {
+        "symbol": "NASDAQ:IEF/AMEX:LQD",
+        "field": "cloud_M",
+        "from": 0,
+        "to": 1,
+        "event": "out of 0/5"
+      },
+      {
+        "symbol": "NASDAQ:IEF/AMEX:LQD",
+        "field": "grade_medium",
+        "from": "C",
+        "to": "B",
+        "event": "grade change"
+      },
+      {
+        "symbol": "NASDAQ:IEF/AMEX:LQD",
+        "field": "grade_long",
+        "from": "F",
+        "to": "D",
+        "event": "grade change"
+      },
+      {
+        "symbol": "NASDAQ:QQQ/AMEX:SPY",
+        "field": "cloud_W",
+        "from": 4,
+        "to": 5,
+        "event": "into 5/5"
+      },
+      {
+        "symbol": "NASDAQ:QQQ/AMEX:VTV",
+        "field": "cloud_W",
+        "from": 3,
+        "to": 5,
+        "event": "into 5/5"
+      },
+      {
+        "symbol": "NASDAQ:QQQ/AMEX:VTV",
+        "field": "grade_medium",
+        "from": "B",
+        "to": "A",
+        "event": "grade change"
+      },
+      {
+        "symbol": "NASDAQ:NDX/SP:SPX",
+        "field": "cloud_W",
+        "from": 4,
+        "to": 5,
+        "event": "into 5/5"
+      },
+      {
+        "symbol": "AMEX:MGK/AMEX:RSP",
+        "field": "stack_W",
+        "from": "mixed",
+        "to": "BULL",
+        "event": "stack change"
+      },
+      {
+        "symbol": "NASDAQ:AIQ/AMEX:SPY",
+        "field": "cloud_W",
+        "from": 3,
+        "to": 5,
+        "event": "into 5/5"
+      },
+      {
+        "symbol": "NASDAQ:AIQ/AMEX:SPY",
+        "field": "grade_medium",
+        "from": "B",
+        "to": "A",
+        "event": "grade change"
+      },
+      {
+        "symbol": "NASDAQ:DTCR/AMEX:SPY",
+        "field": "grade_medium",
+        "from": "C",
+        "to": "D",
+        "event": "grade change"
+      },
+      {
+        "symbol": "AMEX:VUG/AMEX:VTV",
+        "field": "grade_medium",
+        "from": "C",
+        "to": "B",
+        "event": "grade change"
+      },
+      {
+        "symbol": "AMEX:XLF",
+        "field": "cloud_W",
+        "from": 5,
+        "to": 4,
+        "event": "out of 5/5"
+      },
+      {
+        "symbol": "AMEX:XLF",
+        "field": "grade_medium",
+        "from": "A",
+        "to": "B",
+        "event": "grade change"
+      },
+      {
+        "symbol": "NASDAQ:EUFN/AMEX:SPY",
+        "field": "grade_medium",
+        "from": "B",
+        "to": "D",
+        "event": "grade change"
+      },
+      {
+        "symbol": "AMEX:EWP/AMEX:SPY",
+        "field": "grade_medium",
+        "from": "C",
+        "to": "D",
+        "event": "grade change"
+      },
+      {
+        "symbol": "AMEX:EWI/AMEX:SPY",
+        "field": "cloud_W",
+        "from": 1,
+        "to": 0,
+        "event": "into 0/5"
+      },
+      {
+        "symbol": "AMEX:FNDF/AMEX:SPY",
+        "field": "grade_medium",
+        "from": "C",
+        "to": "D",
+        "event": "grade change"
+      },
+      {
+        "symbol": "AMEX:FNDF/AMEX:SPY",
+        "field": "grade_long",
+        "from": "B",
+        "to": "C",
+        "event": "grade change"
+      },
+      {
+        "symbol": "NYMEX:CL1!/COMEX:GC1!",
+        "field": "cloud_W",
+        "from": 4,
+        "to": 5,
+        "event": "into 5/5"
+      },
+      {
+        "symbol": "NYMEX:CL1!/COMEX:GC1!",
+        "field": "cloud_M",
+        "from": 0,
+        "to": 1,
+        "event": "out of 0/5"
+      },
+      {
+        "symbol": "NYMEX:CL1!/COMEX:GC1!",
+        "field": "grade_medium",
+        "from": "B",
+        "to": "A",
+        "event": "grade change"
+      },
+      {
+        "symbol": "NYMEX:CL1!",
+        "field": "cloud_M",
+        "from": 4,
+        "to": 5,
+        "event": "into 5/5"
+      },
+      {
+        "symbol": "NYMEX:CL1!",
+        "field": "grade_medium",
+        "from": "B",
+        "to": "C",
+        "event": "grade change"
+      },
+      {
+        "symbol": "AMEX:XME/AMEX:SPY",
+        "field": "grade_medium",
+        "from": "D",
+        "to": "F",
+        "event": "grade change"
+      },
+      {
+        "symbol": "AMEX:SLV",
+        "field": "grade_long",
+        "from": "A",
+        "to": "B",
+        "event": "grade change"
+      }
+    ]
+  },
+  "section_keys": {
+    "1 REGIME - INDICES & RATES": "Indices & rates — high score = the index or yield itself is trending up (VIX high = volatility rising; US10Y high = the 10-year yield rising; IEF/IEI high = Treasury prices rising, i.e. yields falling).",
+    "2 FEAR GAUGES - CREDIT & DEFENSIVE": "Fear gauges — ratios: high score = the defensive numerator (cash, Treasuries, staples, low-vol, yen, commodities) leading stocks; credit ETFs on their own (JNK, BKLN, LQD, BSV): high score = those bond prices rising. Exception JNK/IEF: high = high-yield leading Treasuries (credit spreads tightening).",
+    "3 GROWTH LEADERSHIP": "Growth leadership — high score = the growth/tech numerator leading the broad market or value.",
+    "4 BREADTH & ROTATION": "Breadth & rotation — high score = equal-weight, small caps, cyclicals, value or dividend stocks leading cap-weight SPY or tech (broadening); XLF on its own: high score = financials trending up.",
+    "5 FOREIGN": "Foreign — high score = the foreign market leading the US (SPY or XLK); exception XLK/SPDW, where high score = US tech leading developed ex-US.",
+    "6 REAL ASSETS": "Real assets — high score = the commodity or miner trending up, or leading stocks; Copper/Gold and Crude/Gold high = the industrial commodity leading gold."
+  },
+  "rows": [
+    {
+      "section": "1 REGIME - INDICES & RATES",
+      "symbol": "NASDAQ:IXIC",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": true,
+      "stack_W": "BULL",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "IXIC",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "1 REGIME - INDICES & RATES",
+      "symbol": "NASDAQ:NDX",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": true,
+      "stack_W": "BULL",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "NDX",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "1 REGIME - INDICES & RATES",
+      "symbol": "SP:SPX",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": false,
+      "stack_W": "BULL",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "SPX",
+      "short": {
+        "cloud": 4,
+        "stack": 1,
+        "trend": 2,
+        "points": 7,
+        "score": 78,
+        "grade": "B"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "1 REGIME - INDICES & RATES",
+      "symbol": "AMEX:SPY",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": false,
+      "stack_W": "BULL",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "SPY",
+      "short": {
+        "cloud": 4,
+        "stack": 1,
+        "trend": 2,
+        "points": 7,
+        "score": 78,
+        "grade": "B"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "1 REGIME - INDICES & RATES",
+      "symbol": "TVC:US10Y",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": true,
+      "stack_W": "BULL",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "US10Y",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "1 REGIME - INDICES & RATES",
+      "symbol": "DJ:DJI",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "DJI",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 1,
+        "trend": 2,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Pullback in uptrend"
+    },
+    {
+      "section": "1 REGIME - INDICES & RATES",
+      "symbol": "AMEX:RSP",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "RSP",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 1,
+        "trend": 2,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Pullback in uptrend"
+    },
+    {
+      "section": "1 REGIME - INDICES & RATES",
+      "symbol": "NASDAQ:IEI",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 1,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "IEI",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 1,
+        "stack": 0,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "1 REGIME - INDICES & RATES",
+      "symbol": "NASDAQ:IEF",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "IEF",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "1 REGIME - INDICES & RATES",
+      "symbol": "TVC:VIX",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "VIX",
+      "short": {
+        "cloud": 1,
+        "stack": 1,
+        "trend": 0,
+        "points": 2,
+        "score": 22,
+        "grade": "D"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "2 FEAR GAUGES - CREDIT & DEFENSIVE",
+      "symbol": "AMEX:JNK/NASDAQ:IEF",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "JNK/IEF",
+      "short": {
+        "cloud": 4,
+        "stack": 1,
+        "trend": 2,
+        "points": 7,
+        "score": 78,
+        "grade": "B"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 1,
+        "trend": 2,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "2 FEAR GAUGES - CREDIT & DEFENSIVE",
+      "symbol": "AMEX:JNK",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 2,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/rising",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "JNK",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 2,
+        "stack": 1,
+        "trend": 0,
+        "points": 3,
+        "score": 33,
+        "grade": "D"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "2 FEAR GAUGES - CREDIT & DEFENSIVE",
+      "symbol": "NASDAQ:IEF/AMEX:LQD",
+      "cloud_W": 3,
+      "W_rising": false,
+      "cloud_M": 1,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/falling",
+      "wk300": "below/rising",
+      "note": "",
+      "display": "IEF/LQD",
+      "short": {
+        "cloud": 3,
+        "stack": 1,
+        "trend": 2,
+        "points": 6,
+        "score": 67,
+        "grade": "B"
+      },
+      "medium": {
+        "cloud": 3,
+        "stack": 1,
+        "trend": 2,
+        "points": 6,
+        "score": 67,
+        "grade": "B"
+      },
+      "long": {
+        "cloud": 1,
+        "stack": 0,
+        "trend": 1,
+        "points": 2,
+        "score": 22,
+        "grade": "D"
+      },
+      "alignment": "Rally in downtrend"
+    },
+    {
+      "section": "2 FEAR GAUGES - CREDIT & DEFENSIVE",
+      "symbol": "AMEX:BSV",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 1,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/rising",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "BSV",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 1,
+        "stack": 1,
+        "trend": 0,
+        "points": 2,
+        "score": 22,
+        "grade": "D"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "2 FEAR GAUGES - CREDIT & DEFENSIVE",
+      "symbol": "AMEX:LQD",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 1,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "LQD",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 1,
+        "stack": 0,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "2 FEAR GAUGES - CREDIT & DEFENSIVE",
+      "symbol": "AMEX:BKLN",
+      "cloud_W": 1,
+      "W_rising": true,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "BKLN",
+      "short": {
+        "cloud": 1,
+        "stack": 1,
+        "trend": 1,
+        "points": 3,
+        "score": 33,
+        "grade": "D"
+      },
+      "medium": {
+        "cloud": 1,
+        "stack": 1,
+        "trend": 0,
+        "points": 2,
+        "score": 22,
+        "grade": "D"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "2 FEAR GAUGES - CREDIT & DEFENSIVE",
+      "symbol": "AMEX:AGG/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "BEAR",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "AGG/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "2 FEAR GAUGES - CREDIT & DEFENSIVE",
+      "symbol": "AMEX:BIL/AMEX:SPYG",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "BEAR",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "BIL/SPYG",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "2 FEAR GAUGES - CREDIT & DEFENSIVE",
+      "symbol": "AMEX:FXY/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "BEAR",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "FXY/SPY",
+      "short": {
+        "cloud": 1,
+        "stack": 1,
+        "trend": 1,
+        "points": 3,
+        "score": 33,
+        "grade": "D"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "2 FEAR GAUGES - CREDIT & DEFENSIVE",
+      "symbol": "NASDAQ:IEF/AMEX:SPYG",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "BEAR",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "IEF/SPYG",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "2 FEAR GAUGES - CREDIT & DEFENSIVE",
+      "symbol": "NASDAQ:SHV/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "BEAR",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "SHV/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "2 FEAR GAUGES - CREDIT & DEFENSIVE",
+      "symbol": "NASDAQ:SHY/AMEX:SPYG",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "BEAR",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "SHY/SPYG",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "2 FEAR GAUGES - CREDIT & DEFENSIVE",
+      "symbol": "AMEX:SPLV/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "BEAR",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "SPLV/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "2 FEAR GAUGES - CREDIT & DEFENSIVE",
+      "symbol": "AMEX:XLP/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "BEAR",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "XLP/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "2 FEAR GAUGES - CREDIT & DEFENSIVE",
+      "symbol": "AMEX:XLP/AMEX:XLK",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "BEAR",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "XLP/XLK",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "2 FEAR GAUGES - CREDIT & DEFENSIVE",
+      "symbol": "TVC:TRJEFFCRB/SP:SPX",
+      "cloud_W": null,
+      "W_rising": null,
+      "cloud_M": null,
+      "M_rising": null,
+      "stack_W": null,
+      "wk200": null,
+      "wk300": null,
+      "note": "unsupported by design",
+      "display": "TRJEFFCRB/SPX",
+      "short": null,
+      "medium": null,
+      "long": null,
+      "alignment": null
+    },
+    {
+      "section": "3 GROWTH LEADERSHIP",
+      "symbol": "AMEX:FTEC/AMEX:IWF",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": true,
+      "stack_W": "BULL",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "FTEC/IWF",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "3 GROWTH LEADERSHIP",
+      "symbol": "NASDAQ:NDX/SP:SPX",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": false,
+      "stack_W": "BULL",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "NDX/SPX",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "3 GROWTH LEADERSHIP",
+      "symbol": "NASDAQ:QQQ/AMEX:SPY",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": false,
+      "stack_W": "BULL",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "QQQ/SPY",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "3 GROWTH LEADERSHIP",
+      "symbol": "NASDAQ:QTEC/AMEX:RSP",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": false,
+      "stack_W": "BULL",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "QTEC/RSP",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "3 GROWTH LEADERSHIP",
+      "symbol": "NASDAQ:SMH/AMEX:SPY",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": true,
+      "stack_W": "BULL",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "SMH/SPY",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "3 GROWTH LEADERSHIP",
+      "symbol": "AMEX:VGT/AMEX:SPY",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": true,
+      "stack_W": "BULL",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "VGT/SPY",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "3 GROWTH LEADERSHIP",
+      "symbol": "AMEX:XLK/AMEX:RSP",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": true,
+      "stack_W": "BULL",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "XLK/RSP",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "3 GROWTH LEADERSHIP",
+      "symbol": "AMEX:XLK/AMEX:SPY",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": false,
+      "stack_W": "BULL",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "XLK/SPY",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "3 GROWTH LEADERSHIP",
+      "symbol": "NASDAQ:AIQ/AMEX:SPY",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": true,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "AIQ/SPY",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 1,
+        "trend": 2,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "3 GROWTH LEADERSHIP",
+      "symbol": "NASDAQ:ONEQ/AMEX:SPY",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "ONEQ/SPY",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 1,
+        "trend": 2,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "3 GROWTH LEADERSHIP",
+      "symbol": "NASDAQ:QQQ/AMEX:VTV",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": true,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "QQQ/VTV",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 1,
+        "trend": 2,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "3 GROWTH LEADERSHIP",
+      "symbol": "AMEX:SPYG/AMEX:SPY",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": true,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "SPYG/SPY",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 1,
+        "trend": 2,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "3 GROWTH LEADERSHIP",
+      "symbol": "AMEX:MGK/AMEX:RSP",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 4,
+      "M_rising": true,
+      "stack_W": "BULL",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "MGK/RSP",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 4,
+        "stack": 2,
+        "trend": 2,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "3 GROWTH LEADERSHIP",
+      "symbol": "AMEX:SCHG/AMEX:SPY",
+      "cloud_W": 4,
+      "W_rising": true,
+      "cloud_M": 4,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "SCHG/SPY",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 4,
+        "stack": 1,
+        "trend": 1,
+        "points": 6,
+        "score": 67,
+        "grade": "B"
+      },
+      "long": {
+        "cloud": 4,
+        "stack": 2,
+        "trend": 2,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "3 GROWTH LEADERSHIP",
+      "symbol": "AMEX:VUG/AMEX:VTV",
+      "cloud_W": 4,
+      "W_rising": true,
+      "cloud_M": 4,
+      "M_rising": true,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "VUG/VTV",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 4,
+        "stack": 1,
+        "trend": 1,
+        "points": 6,
+        "score": 67,
+        "grade": "B"
+      },
+      "long": {
+        "cloud": 4,
+        "stack": 2,
+        "trend": 2,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "3 GROWTH LEADERSHIP",
+      "symbol": "AMEX:IWF/AMEX:IWD",
+      "cloud_W": 2,
+      "W_rising": true,
+      "cloud_M": 3,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "IWF/IWD",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 2,
+        "stack": 1,
+        "trend": 0,
+        "points": 3,
+        "score": 33,
+        "grade": "D"
+      },
+      "long": {
+        "cloud": 3,
+        "stack": 2,
+        "trend": 2,
+        "points": 7,
+        "score": 78,
+        "grade": "B"
+      },
+      "alignment": "Mixed"
+    },
+    {
+      "section": "3 GROWTH LEADERSHIP",
+      "symbol": "NASDAQ:DTCR/AMEX:SPY",
+      "cloud_W": 1,
+      "W_rising": false,
+      "cloud_M": null,
+      "M_rising": null,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/falling",
+      "note": "",
+      "display": "DTCR/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 1,
+        "stack": 1,
+        "trend": 1,
+        "points": 3,
+        "score": 33,
+        "grade": "D"
+      },
+      "long": null,
+      "alignment": "n/a"
+    },
+    {
+      "section": "4 BREADTH & ROTATION",
+      "symbol": "AMEX:XLF",
+      "cloud_W": 4,
+      "W_rising": false,
+      "cloud_M": 5,
+      "M_rising": true,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "XLF",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 4,
+        "stack": 1,
+        "trend": 1,
+        "points": 6,
+        "score": 67,
+        "grade": "B"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Pullback in uptrend"
+    },
+    {
+      "section": "4 BREADTH & ROTATION",
+      "symbol": "ITA/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 4,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/rising",
+      "wk300": "below/rising",
+      "note": "",
+      "display": "ITA/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 4,
+        "stack": 1,
+        "trend": 1,
+        "points": 6,
+        "score": 67,
+        "grade": "B"
+      },
+      "alignment": "Pullback in uptrend"
+    },
+    {
+      "section": "4 BREADTH & ROTATION",
+      "symbol": "PAVE/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 2,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "PAVE/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 2,
+        "stack": 1,
+        "trend": 2,
+        "points": 5,
+        "score": 56,
+        "grade": "C"
+      },
+      "alignment": "Mixed"
+    },
+    {
+      "section": "4 BREADTH & ROTATION",
+      "symbol": "AMEX:XLC/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 1,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/rising",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "XLC/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 1,
+        "stack": 1,
+        "trend": 0,
+        "points": 2,
+        "score": 22,
+        "grade": "D"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "4 BREADTH & ROTATION",
+      "symbol": "AMEX:IWM/AMEX:SPY",
+      "cloud_W": 1,
+      "W_rising": false,
+      "cloud_M": 1,
+      "M_rising": true,
+      "stack_W": "mixed",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "IWM/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 1,
+        "stack": 1,
+        "trend": 1,
+        "points": 3,
+        "score": 33,
+        "grade": "D"
+      },
+      "long": {
+        "cloud": 1,
+        "stack": 0,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "4 BREADTH & ROTATION",
+      "symbol": "AMEX:XLE/AMEX:XLK",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/falling",
+      "wk300": "below/rising",
+      "note": "",
+      "display": "XLE/XLK",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 1,
+        "points": 2,
+        "score": 22,
+        "grade": "D"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 1,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "4 BREADTH & ROTATION",
+      "symbol": "AMEX:IJK/AMEX:SPY",
+      "cloud_W": 1,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": true,
+      "stack_W": "mixed",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "IJK/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 1,
+        "stack": 1,
+        "trend": 1,
+        "points": 3,
+        "score": 33,
+        "grade": "D"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "4 BREADTH & ROTATION",
+      "symbol": "AMEX:IJR/AMEX:SPY",
+      "cloud_W": 1,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": true,
+      "stack_W": "mixed",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "IJR/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 1,
+        "stack": 1,
+        "trend": 1,
+        "points": 3,
+        "score": 33,
+        "grade": "D"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "4 BREADTH & ROTATION",
+      "symbol": "AMEX:XLF/AMEX:SPY",
+      "cloud_W": 1,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "XLF/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 1,
+        "stack": 1,
+        "trend": 0,
+        "points": 2,
+        "score": 22,
+        "grade": "D"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "4 BREADTH & ROTATION",
+      "symbol": "AMEX:XLI/AMEX:SPYG",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "XLI/SPYG",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "4 BREADTH & ROTATION",
+      "symbol": "AMEX:RSP/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "BEAR",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "RSP/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "4 BREADTH & ROTATION",
+      "symbol": "AMEX:RSP/AMEX:XLK",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "BEAR",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "RSP/XLK",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "4 BREADTH & ROTATION",
+      "symbol": "AMEX:SDY/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "BEAR",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "SDY/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "4 BREADTH & ROTATION",
+      "symbol": "AMEX:SPYV/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "BEAR",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "SPYV/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "4 BREADTH & ROTATION",
+      "symbol": "AMEX:XLB/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "BEAR",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "XLB/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "4 BREADTH & ROTATION",
+      "symbol": "AMEX:XLF/AMEX:XLK",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "BEAR",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "XLF/XLK",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "4 BREADTH & ROTATION",
+      "symbol": "AMEX:XLI/AMEX:XLK",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "BEAR",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "XLI/XLK",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "5 FOREIGN",
+      "symbol": "AMEX:XLK/AMEX:SPDW",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": true,
+      "stack_W": "BULL",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "XLK/SPDW",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "5 FOREIGN",
+      "symbol": "AMEX:DXJ/AMEX:SPY",
+      "cloud_W": 3,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": true,
+      "stack_W": "BULL",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "DXJ/SPY",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 3,
+        "stack": 2,
+        "trend": 2,
+        "points": 7,
+        "score": 78,
+        "grade": "B"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "5 FOREIGN",
+      "symbol": "AMEX:EWY/AMEX:SPY",
+      "cloud_W": 4,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": true,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "EWY/SPY",
+      "short": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 4,
+        "stack": 1,
+        "trend": 2,
+        "points": 7,
+        "score": 78,
+        "grade": "B"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "5 FOREIGN",
+      "symbol": "NASDAQ:EUFN/AMEX:SPY",
+      "cloud_W": 1,
+      "W_rising": false,
+      "cloud_M": 5,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "EUFN/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 1,
+        "stack": 1,
+        "trend": 1,
+        "points": 3,
+        "score": 33,
+        "grade": "D"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Pullback in uptrend"
+    },
+    {
+      "section": "5 FOREIGN",
+      "symbol": "AMEX:EWP/AMEX:SPY",
+      "cloud_W": 1,
+      "W_rising": false,
+      "cloud_M": 5,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "EWP/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 1,
+        "stack": 1,
+        "trend": 1,
+        "points": 3,
+        "score": 33,
+        "grade": "D"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Pullback in uptrend"
+    },
+    {
+      "section": "5 FOREIGN",
+      "symbol": "AMEX:EWI/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 5,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/falling",
+      "note": "",
+      "display": "EWI/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 1,
+        "points": 2,
+        "score": 22,
+        "grade": "D"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 1,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "alignment": "Pullback in uptrend"
+    },
+    {
+      "section": "5 FOREIGN",
+      "symbol": "NASDAQ:EMXC/AMEX:SPY",
+      "cloud_W": 4,
+      "W_rising": true,
+      "cloud_M": 4,
+      "M_rising": true,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/falling",
+      "note": "",
+      "display": "EMXC/SPY",
+      "short": {
+        "cloud": 5,
+        "stack": 1,
+        "trend": 2,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 4,
+        "stack": 1,
+        "trend": 2,
+        "points": 7,
+        "score": 78,
+        "grade": "B"
+      },
+      "long": {
+        "cloud": 4,
+        "stack": 2,
+        "trend": 1,
+        "points": 7,
+        "score": 78,
+        "grade": "B"
+      },
+      "alignment": "Aligned up"
+    },
+    {
+      "section": "5 FOREIGN",
+      "symbol": "AMEX:FNDF/AMEX:SPY",
+      "cloud_W": 1,
+      "W_rising": false,
+      "cloud_M": 4,
+      "M_rising": true,
+      "stack_W": "mixed",
+      "wk200": "above/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "FNDF/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 1,
+        "stack": 1,
+        "trend": 1,
+        "points": 3,
+        "score": 33,
+        "grade": "D"
+      },
+      "long": {
+        "cloud": 4,
+        "stack": 1,
+        "trend": 0,
+        "points": 5,
+        "score": 56,
+        "grade": "C"
+      },
+      "alignment": "Mixed"
+    },
+    {
+      "section": "5 FOREIGN",
+      "symbol": "NASDAQ:ACWX/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 2,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "ACWX/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 1,
+        "points": 2,
+        "score": 22,
+        "grade": "D"
+      },
+      "long": {
+        "cloud": 2,
+        "stack": 0,
+        "trend": 0,
+        "points": 2,
+        "score": 22,
+        "grade": "D"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "5 FOREIGN",
+      "symbol": "AMEX:EFA/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 1,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "EFA/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 1,
+        "stack": 0,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "5 FOREIGN",
+      "symbol": "NASDAQ:ACWX/AMEX:XLK",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 0,
+      "M_rising": false,
+      "stack_W": "BEAR",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "ACWX/XLK",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "alignment": "Aligned down"
+    },
+    {
+      "section": "6 REAL ASSETS",
+      "symbol": "NYMEX:CL1!",
+      "cloud_W": 2,
+      "W_rising": false,
+      "cloud_M": 5,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "Crude",
+      "short": {
+        "cloud": 3,
+        "stack": 1,
+        "trend": 2,
+        "points": 6,
+        "score": 67,
+        "grade": "B"
+      },
+      "medium": {
+        "cloud": 2,
+        "stack": 1,
+        "trend": 2,
+        "points": 5,
+        "score": 56,
+        "grade": "C"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Mixed"
+    },
+    {
+      "section": "6 REAL ASSETS",
+      "symbol": "AMEX:GDX",
+      "cloud_W": 2,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "GDX",
+      "short": {
+        "cloud": 1,
+        "stack": 1,
+        "trend": 1,
+        "points": 3,
+        "score": 33,
+        "grade": "D"
+      },
+      "medium": {
+        "cloud": 2,
+        "stack": 1,
+        "trend": 1,
+        "points": 4,
+        "score": 44,
+        "grade": "C"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Pullback in uptrend"
+    },
+    {
+      "section": "6 REAL ASSETS",
+      "symbol": "AMEX:GLD",
+      "cloud_W": 0,
+      "W_rising": true,
+      "cloud_M": 5,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "GLD",
+      "short": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 1,
+        "points": 2,
+        "score": 22,
+        "grade": "D"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 1,
+        "points": 2,
+        "score": 22,
+        "grade": "D"
+      },
+      "long": {
+        "cloud": 5,
+        "stack": 2,
+        "trend": 2,
+        "points": 9,
+        "score": 100,
+        "grade": "A"
+      },
+      "alignment": "Pullback in uptrend"
+    },
+    {
+      "section": "6 REAL ASSETS",
+      "symbol": "AMEX:GLD/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 4,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "GLD/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 4,
+        "stack": 2,
+        "trend": 2,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "alignment": "Pullback in uptrend"
+    },
+    {
+      "section": "6 REAL ASSETS",
+      "symbol": "TVC:GOLD/SP:SPX",
+      "cloud_W": 0,
+      "W_rising": false,
+      "cloud_M": 4,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "Gold/SPX",
+      "short": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 1,
+        "points": 2,
+        "score": 22,
+        "grade": "D"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 4,
+        "stack": 2,
+        "trend": 2,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "alignment": "Pullback in uptrend"
+    },
+    {
+      "section": "6 REAL ASSETS",
+      "symbol": "AMEX:XME/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": true,
+      "cloud_M": 4,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "XME/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 1,
+        "points": 2,
+        "score": 22,
+        "grade": "D"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 4,
+        "stack": 2,
+        "trend": 2,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "alignment": "Pullback in uptrend"
+    },
+    {
+      "section": "6 REAL ASSETS",
+      "symbol": "AMEX:SLV",
+      "cloud_W": 0,
+      "W_rising": true,
+      "cloud_M": 3,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "above/rising",
+      "wk300": "above/rising",
+      "note": "",
+      "display": "SLV",
+      "short": {
+        "cloud": 1,
+        "stack": 1,
+        "trend": 1,
+        "points": 3,
+        "score": 33,
+        "grade": "D"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 1,
+        "points": 2,
+        "score": 22,
+        "grade": "D"
+      },
+      "long": {
+        "cloud": 3,
+        "stack": 2,
+        "trend": 2,
+        "points": 7,
+        "score": 78,
+        "grade": "B"
+      },
+      "alignment": "Pullback in uptrend"
+    },
+    {
+      "section": "6 REAL ASSETS",
+      "symbol": "AMEX:URA/AMEX:SPY",
+      "cloud_W": 0,
+      "W_rising": true,
+      "cloud_M": 3,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/rising",
+      "wk300": "below/rising",
+      "note": "",
+      "display": "URA/SPY",
+      "short": {
+        "cloud": 0,
+        "stack": 0,
+        "trend": 0,
+        "points": 0,
+        "score": 0,
+        "grade": "F"
+      },
+      "medium": {
+        "cloud": 0,
+        "stack": 1,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "long": {
+        "cloud": 3,
+        "stack": 1,
+        "trend": 1,
+        "points": 5,
+        "score": 56,
+        "grade": "C"
+      },
+      "alignment": "Mixed"
+    },
+    {
+      "section": "6 REAL ASSETS",
+      "symbol": "COMEX:HG1!/COMEX:GC1!",
+      "cloud_W": 5,
+      "W_rising": true,
+      "cloud_M": 1,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "Copper/Gold",
+      "short": {
+        "cloud": 5,
+        "stack": 1,
+        "trend": 1,
+        "points": 7,
+        "score": 78,
+        "grade": "B"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 1,
+        "trend": 2,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 1,
+        "stack": 0,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "alignment": "Rally in downtrend"
+    },
+    {
+      "section": "6 REAL ASSETS",
+      "symbol": "NYMEX:CL1!/COMEX:GC1!",
+      "cloud_W": 5,
+      "W_rising": false,
+      "cloud_M": 1,
+      "M_rising": false,
+      "stack_W": "mixed",
+      "wk200": "below/falling",
+      "wk300": "below/falling",
+      "note": "",
+      "display": "Crude/Gold",
+      "short": {
+        "cloud": 5,
+        "stack": 1,
+        "trend": 2,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "medium": {
+        "cloud": 5,
+        "stack": 1,
+        "trend": 2,
+        "points": 8,
+        "score": 89,
+        "grade": "A"
+      },
+      "long": {
+        "cloud": 1,
+        "stack": 0,
+        "trend": 0,
+        "points": 1,
+        "score": 11,
+        "grade": "F"
+      },
+      "alignment": "Rally in downtrend"
+    }
+  ]
+}
