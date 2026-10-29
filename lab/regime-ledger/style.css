@@ -723,6 +723,42 @@ footer > * {
 
 
 /* --------------------------------------------------------------------------
+   12b. Provenance badge — display-only label for reconstructed and
+   late-uploaded reports (operator addition 15, 2026-10-22).
+   -------------------------------------------------------------------------- */
+
+.provenance {
+  border: 1px solid var(--kn-rule-strong);
+  border-left: 3px solid var(--kn-accent);
+  color: var(--kn-text);
+  font-size: 0.9rem;
+  margin: 12px 0 0;
+  padding: 8px 12px;
+}
+
+td .provenance {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+.provenance__label {
+  font-family: var(--kn-mono);
+  letter-spacing: 0.04em;
+  margin-right: 6px;
+  text-transform: uppercase;
+}
+
+.provenance-note {
+  color: var(--kn-muted);
+  font-size: 0.9rem;
+  margin: 8px 0 0;
+}
+
+
+/* --------------------------------------------------------------------------
    13. Print — structure only. The palette is dark-only by design and is not
    restated here; the browser's own print handling applies.
    -------------------------------------------------------------------------- */
