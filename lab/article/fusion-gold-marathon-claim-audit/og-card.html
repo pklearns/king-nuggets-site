@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Source for og.png (1200x630) and og-portrait.png (1080x1350).
+     Rendered locally with WebKit; see methodology.md. Not linked from the page.
+     Add class="portrait" on <html> for the 1080x1350 variant. -->
+<html lang="en" class="lab">
+<head>
+<meta charset="utf-8">
+<title>Fusion Gold Claim Audit — share card</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="../../../assets/css/lab.css">
+<style>
+  html, body { margin: 0; background: var(--kn-ground); }
+  .card {
+    width: 1200px; height: 630px; box-sizing: border-box; padding: 64px 72px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    color: var(--kn-text); background: var(--kn-ground);
+    border-top: 6px solid var(--kn-accent);
+  }
+  .portrait .card { width: 1080px; height: 1350px; padding: 96px 80px; }
+  .mark { display: flex; align-items: center; gap: 16px; font-family: var(--kn-serif); font-size: 30px; letter-spacing: 0.06em; text-transform: uppercase; }
+  .mark__bar { width: 1px; height: 30px; background: var(--kn-rule-strong); }
+  .mark__tag { font-family: var(--kn-mono); font-size: 18px; letter-spacing: 0.16em; color: var(--kn-accent); border: 1px solid var(--kn-accent); padding: 6px 12px; }
+  .kicker { font-family: var(--kn-mono); font-size: 16px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--kn-faint); margin-bottom: 18px; }
+  h1 { font-family: var(--kn-serif); font-weight: 400; font-size: 76px; line-height: 1.05; margin: 0; }
+  .portrait h1 { font-size: 96px; }
+  .num { border-top: 1px solid var(--kn-rule-strong); padding-top: 26px; display: flex; align-items: baseline; gap: 28px; }
+  .portrait .num { flex-direction: column; gap: 16px; padding-top: 40px; }
+  .num__fig { font-family: var(--kn-sans); font-weight: 600; font-size: 84px; line-height: 1; color: var(--kn-accent); font-variant-numeric: tabular-nums lining-nums; white-space: nowrap; }
+  .portrait .num__fig { font-size: 150px; }
+  .num__text { font-size: 26px; line-height: 1.35; max-width: 30ch; }
+  .portrait .num__text { font-size: 38px; max-width: 24ch; }
+  .src { font-family: var(--kn-mono); font-size: 14px; letter-spacing: 0.08em; color: var(--kn-faint); margin-top: 14px; }
+  .portrait .src { font-size: 20px; margin-top: 28px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="mark"><span>King Nuggets</span><span class="mark__bar"></span><span class="mark__tag">Lab</span></div>
+    <div>
+      <div class="kicker">Claim audit · Modeled, not observed</div>
+      <h1>Fusion Gold Claim Audit</h1>
+    </div>
+    <div>
+      <div class="num">
+        <div class="num__fig">≈ 0.08%</div>
+        <div class="num__text">The paper’s modeled reactor ≈ 0.08% of annual gold mine supply.</div>
+      </div>
+      <div class="src">2,953 kg/yr modeled (arXiv 2507.13461) ÷ 3,672 t mined in 2025 (World Gold Council)</div>
+    </div>
+  </div>
+</body>
+</html>
