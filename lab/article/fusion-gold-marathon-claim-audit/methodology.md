@@ -1,14 +1,15 @@
 # Fusion Gold Claim Audit — methodology
 
 Sources, calculations, and what could not be checked. Every source below was
-opened on 2026-10-22 unless marked otherwise.
+opened on 2026-10-22 unless marked otherwise. Sections 01 and 07 and the
+spectrum description were added on 2026-10-30; no figures changed.
 
 ## Sources opened
 
 | # | Source | What was checked | Status |
 |---|--------|------------------|--------|
 | S1 | Marathon Fusion, post on X, https://x.com/MarathonFusion/status/2113001073019662481 | Full text, timestamp (2026-10-21 20:14:48 UTC), attached media. Read via the public fxtwitter JSON mirror because x.com returned HTTP 402. The attachment is a 104.5-second video. Contact sheets were sampled every 4 s; no gamma spectrum, gold mass or "10x" definition appears in it. | Opened (via mirror) |
-| S2 | Marathon Fusion thread reply carrying the gamma-ray spectrum | Not found or opened. Described only by press coverage (e.g. The Oregon Group, 2026-10-22: "a single gamma-ray spectrum posted in the thread"; other coverage: signals 8–44 h after irradiation). | **PUBLICATION BLOCKER**. Cited in the article only as press description, labelled Unverified. |
+| S2 | Marathon Fusion thread reply, https://x.com/MarathonFusion/status/2113001085912895846 | Opened 2026-10-30 via the fxtwitter conversation mirror. Text: "Mercury transmuted into stable gold, using fusion neutrons, at 10x the record set by CERN in 2025." One image (3646×2220): a gamma-ray spectrum, counts per live second per keV against energy 0–400 keV, at cooling times 8, 20, 32 and 44 h plus background. Labelled lines: Hg-197 (67.0, 68.8; 77.4, 78.0 keV), Hg-197m (68.9, 70.8; 80.3; 134.0 keV), Au-197m (279.0 keV) overlapping Hg-203 (279.2 keV). No gold mass, no sample mass, no "10x" definition. Stable Au-197 emits no gamma rays, so the spectrum evidences the Hg-197 precursor, not stable gold directly. The rest of the thread is mainly about medical isotopes, a plasma centrifuge result and a San Francisco reactor. | Verified (opened). Earlier PUBLICATION BLOCKER cleared 2026-10-30. |
 | S3 | CERN news, "ALICE detects the conversion of lead into gold at the LHC", 2025-05-08, https://home.cern/alice-detects-conversion-lead-gold-lhc | "about 86 billion gold nuclei were created at the four major experiments"; "just 29 picograms"; "Run 2 of the LHC (2015–2018)"; "immediately fragment". | Verified |
 | S4 | Rutkowski, Harter, Parisi, "Scalable Chrysopoeia via (n,2n) Reactions Driven by Deuterium-Tritium Fusion Neutrons", arXiv 2507.13461 v3 (2025-08-03) | Full PDF text extracted. Abstract: "about 2t/GW_th/yr". §4.1: 1500 MW_th design point; reference case "2953kg/yr of 197Au", TBR 1.19, burn ratio 0.0047, "198Hg mass of 622 tons", 90 at% enrichment. §4.1.2: 6.8 yr (NRC Class A), 13.7 yr (Class 7 threshold), 17.7 yr (banana-equivalent). §5 / Fig. 7: NPV of a $3B 1500 MW_th plant; gold valued at $100k/kg at 3 t/yr. 197Hg half-life 64.1 h. | Verified |
 | S5 | Parisi, Azad, "Self-subsidizing Mercury Remediation with Fusion Reactors", arXiv 2604.02590 v1 (2026-04-03) | Full PDF text extracted. Table 2 (1 GW_th D-T source over 30 yr): blanket 393/389 t at 10^14, 3.9 t at 10^16, 393/389 kg at 10^17; Au mass natural/enriched 5.8/49 t, 15/44 t, 14/41 t. "~3x more gold" for enriched feed. Extractable stock 1,500,000 t (citing its ref. [15]). Minamata Convention prohibits new mining. Flow-through blanket in supplement §S9.2. A text search for "cool" found no cooling analysis. | Verified |
@@ -46,7 +47,7 @@ All values were recomputed in this session.
 ## Not accessible
 
 - x.com directly (HTTP 402). Worked around for the main post via the fxtwitter mirror.
-- S2, the thread reply with the spectrum: **PUBLICATION BLOCKER**.
+- S2 was not accessible on 2026-10-22; opened 2026-10-30 via the mirror (see S2).
 - The 1.5 Mt extractable-mercury source (ref. [15] of S5): not opened. Labelled Unverified.
 
 ## Share images

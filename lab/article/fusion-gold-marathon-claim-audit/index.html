@@ -22,19 +22,9 @@
 
 <link rel="stylesheet" href="../../../assets/css/lab.css">
 <style>
-/* Article-local styles for the two figures, the placeholders and the claim
+/* Article-local styles for the two figures and the claim
    register. Scoped here so lab.css is untouched. No colour carries meaning
    on its own: modeled vs observed is also written out and patterned. */
-.lab .placeholder {
-  border: 1px dashed var(--kn-rule-strong);
-  padding: 16px 20px;
-  margin: 0 0 32px;
-  font-family: var(--kn-mono);
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--kn-muted);
-}
 .lab .prose ul { margin: 0 0 24px; padding-left: 20px; font-size: 17px; line-height: 1.7; }
 .lab .prose li { margin-bottom: 8px; }
 
@@ -142,7 +132,7 @@
       <div class="article__meta">
         <span>§ 05 — Article</span>
         <span>Gold · Claim audit</span>
-        <span>[DATE]</span>
+        <span>2026-10-30</span>
         <span>Patrick King</span>
       </div>
       <h1 class="article__title">Fusion Gold Claim Audit</h1>
@@ -153,12 +143,14 @@
       <div class="prose">
 
         <h2 id="the-announcement"><span class="h-num">01</span><span>The announcement</span></h2>
-        <div class="placeholder" data-placeholder="patrick-01">[PATRICK WRITES — section 01: The announcement]</div>
+        <p>On 21 October a fusion start-up called Marathon Fusion posted that it had turned mercury into real, stable gold at ten times CERN’s record. Within about a day the post had passed five million views, and the obvious question came with it: does lab-made gold do to gold what lab-grown diamonds did to diamonds?</p>
+        <p>Gold gets one line up top and one reply further down. Most of the thread is about medical isotopes and a reactor the company is building in San Francisco. But the gold line is the one that travelled, and it is a fair question for anyone who owns gold or the miners.</p>
+        <p>For fusion gold to matter to the price, four things all have to be true. The science has to work, it has to scale, it has to pay, and the tonnage has to register against the gold that already exists. I took each one to the primary sources and labelled every number by where it came from. The claim register at the end lists them all.</p>
 
         <h2 id="making-gold-is-not-a-gold-business"><span class="h-num">02</span><span>Making gold is not a gold business</span></h2>
         <p>The physics is not in dispute. A 14 MeV neutron from a deuterium–tritium fusion reaction can knock one neutron out of mercury-198. That leaves mercury-197, which decays to stable gold-197 with a half-life of 64.1 hours.</p>
         <p>The record Marathon Fusion says it beat belongs to CERN. In May 2025 the ALICE collaboration reported that about 86 billion gold nuclei were created across the LHC’s four main experiments during Run 2, 2015 to 2018. That is 29 picograms, and the nuclei fragmented almost immediately. CERN made gold. It kept none.</p>
-        <p>Marathon’s post on 21 October is a 104-second video and three sentences. It says that last month the company “demonstrated high-rate alchemy … beating CERN’s record by a factor of 10.” It gives no mass, no definition of “10x” and no paper. Press coverage describes the evidence in the thread as a single gamma-ray spectrum.</p>
+        <p>Marathon’s post on 21 October is a 104-second video and three sentences. It says that last month the company “demonstrated high-rate alchemy … beating CERN’s record by a factor of 10.” It gives no mass, no definition of “10x” and no paper. A later post in the thread adds one image: a gamma-ray spectrum taken 8 to 44 hours after irradiation, with peaks labelled mostly for mercury-197. Stable gold gives off no gamma rays, so the spectrum shows the radioactive mercury on its way to becoming gold, not the gold itself.</p>
         <p>Ten times what? Read as total mass, ten times CERN is 290 picograms, under a third of a nanogram. Read as a rate, the total depends on a run time Marathon has not disclosed. Either way, nothing disclosed comes anywhere near a quantity you could weigh.</p>
 
         <h2 id="the-economics"><span class="h-num">03</span><span>The economics are a simulation</span></h2>
@@ -204,7 +196,7 @@
               <div class="stage__num">01</div>
               <div class="stage__name">Scientific feasibility</div>
               <div class="stage__k">Evidenced</div>
-              <ul><li>Hg-198 (n,2n) → Hg-197 → Au-197 is established physics</li><li>Company-reported experiment, September 2026</li></ul>
+              <ul><li>Hg-198 (n,2n) → Hg-197 → Au-197 is established physics</li><li>Company-reported experiment, September 2026, with a gamma spectrum</li></ul>
               <div class="stage__k">Open</div>
               <ul class="stage__open"><li>Mass of gold made</li><li>What “10x” measures</li><li>Independent assay, peer review</li></ul>
             </li>
@@ -246,7 +238,9 @@
         </ul>
 
         <h2 id="the-larger-lesson"><span class="h-num">07</span><span>The larger lesson</span></h2>
-        <div class="placeholder" data-placeholder="patrick-07">[PATRICK WRITES — section 07: The larger lesson]</div>
+        <p>The physics here is real, and that is what makes a claim like this travel. One true stage lends its credibility to three that haven’t been shown. A company-reported lab result became, in the retelling, a threat to the gold price. Four separate questions collapsed into one headline.</p>
+        <p>The check that works is the one I’d run on any big claim: split it into stages, ask what evidence sits behind each, and keep modeled numbers apart from observed ones. Here only the first stage has an experiment behind it, and that experiment is company-reported. Everything after it is simulation or projection.</p>
+        <p>That is not a dismissal. The 2026 paper loosens the mercury constraint, and if fusion plants are ever built at scale the arithmetic changes. Fusion gold belongs on a watch list, not in the dismissed pile. For now, the reactor in Marathon’s own paper would make about 0.08% of one year’s mine supply, and its gold comes out radioactive.</p>
 
         <h3 id="claim-register">Appendix — Claim register</h3>
         <div class="register-wrap">
@@ -255,7 +249,7 @@
             <tbody>
               <tr><td>Mercury turned into stable gold “last month”</td><td>Company-reported experiment</td><td>Marathon Fusion, post on X</td><td>2026-10-21</td></tr>
               <tr><td>“Beating CERN’s record by a factor of 10”; metric not defined</td><td>Company-reported experiment</td><td>Marathon Fusion, post on X</td><td>2026-10-21</td></tr>
-              <tr><td>Evidence is a single gamma-ray spectrum</td><td>Unverified</td><td>Press coverage of the thread; thread post not opened</td><td>2026-10-22</td></tr>
+              <tr><td>Evidence posted: one gamma-ray spectrum, 8–44 h after irradiation, Hg-197 peaks; no mass</td><td>Company-reported experiment</td><td>Marathon Fusion, thread reply on X</td><td>2026-10-21</td></tr>
               <tr><td>~86 billion gold nuclei, 29 pg, Run 2 (2015–18), fragmented</td><td>Independent observation</td><td>CERN news, ALICE</td><td>2025-05-08</td></tr>
               <tr><td>~2 t Au per GW<sub>th</sub> per year</td><td>Simulation</td><td>arXiv 2507.13461, abstract and §4.1</td><td>2025-08-03 (v3)</td></tr>
               <tr><td>2,953 kg/yr at 1.5 GW<sub>th</sub>; 622 t Hg-198; 0.47%/yr burn</td><td>Simulation</td><td>arXiv 2507.13461, §4.1</td><td>2025-08-03 (v3)</td></tr>
@@ -282,7 +276,7 @@
           <div class="backing__grid">
             <div>
               <div class="rail__label">Published</div>
-              <div class="rail__value">[DATE]</div>
+              <div class="rail__value">2026-10-30</div>
             </div>
             <div>
               <div class="rail__label">First appeared</div>
