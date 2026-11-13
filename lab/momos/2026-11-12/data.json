@@ -1,0 +1,543 @@
+{
+  "session": "2026-11-12",
+  "generated_at_utc": "2026-11-13T04:00:02Z",
+  "source_commit": "f22a6b35",
+  "counts": {
+    "SP1500": 1483,
+    "ETF": 3903,
+    "LEVERAGED_ETF": 443
+  },
+  "groups": {
+    "SP1500": [
+      {
+        "symbol": "MRNA",
+        "group": "SP1500",
+        "rank": 100.0,
+        "change_5": 0.0,
+        "change_20": 0.0
+      },
+      {
+        "symbol": "XNCR",
+        "group": "SP1500",
+        "rank": 99.9,
+        "change_5": 0.0,
+        "change_20": 3.3
+      },
+      {
+        "symbol": "AZTA",
+        "group": "SP1500",
+        "rank": 99.9,
+        "change_5": 1.6,
+        "change_20": 6.1
+      },
+      {
+        "symbol": "SDGR",
+        "group": "SP1500",
+        "rank": 99.8,
+        "change_5": 0.1,
+        "change_20": 2.2
+      },
+      {
+        "symbol": "CERT",
+        "group": "SP1500",
+        "rank": 99.7,
+        "change_5": -0.1,
+        "change_20": 4.7
+      },
+      {
+        "symbol": "VSXY",
+        "group": "SP1500",
+        "rank": 99.7,
+        "change_5": -0.2,
+        "change_20": 3.5
+      },
+      {
+        "symbol": "CRL",
+        "group": "SP1500",
+        "rank": 99.6,
+        "change_5": 2.2,
+        "change_20": 3.2
+      },
+      {
+        "symbol": "GKOS",
+        "group": "SP1500",
+        "rank": 99.5,
+        "change_5": 0.3,
+        "change_20": 12.4
+      },
+      {
+        "symbol": "SN",
+        "group": "SP1500",
+        "rank": 99.5,
+        "change_5": 0.0,
+        "change_20": 3.1
+      },
+      {
+        "symbol": "HAE",
+        "group": "SP1500",
+        "rank": 99.4,
+        "change_5": -0.2,
+        "change_20": 0.6
+      },
+      {
+        "symbol": "COTY",
+        "group": "SP1500",
+        "rank": 99.3,
+        "change_5": 0.3,
+        "change_20": 5.7
+      },
+      {
+        "symbol": "VCEL",
+        "group": "SP1500",
+        "rank": 99.2,
+        "change_5": 1.1,
+        "change_20": 27.5
+      },
+      {
+        "symbol": "DFIN",
+        "group": "SP1500",
+        "rank": 99.2,
+        "change_5": 0.6,
+        "change_20": 32.9
+      },
+      {
+        "symbol": "CBRL",
+        "group": "SP1500",
+        "rank": 99.1,
+        "change_5": -0.6,
+        "change_20": -0.7
+      },
+      {
+        "symbol": "MANH",
+        "group": "SP1500",
+        "rank": 99.0,
+        "change_5": -0.1,
+        "change_20": 2.7
+      },
+      {
+        "symbol": "ANF",
+        "group": "SP1500",
+        "rank": 99.0,
+        "change_5": -0.5,
+        "change_20": 2.2
+      },
+      {
+        "symbol": "KSS",
+        "group": "SP1500",
+        "rank": 98.9,
+        "change_5": 0.7,
+        "change_20": 1.9
+      },
+      {
+        "symbol": "EPAM",
+        "group": "SP1500",
+        "rank": 98.8,
+        "change_5": -0.6,
+        "change_20": 44.6
+      },
+      {
+        "symbol": "OKTA",
+        "group": "SP1500",
+        "rank": 98.8,
+        "change_5": 1.8,
+        "change_20": -1.1
+      },
+      {
+        "symbol": "LFST",
+        "group": "SP1500",
+        "rank": 98.7,
+        "change_5": 0.5,
+        "change_20": 2.7
+      },
+      {
+        "symbol": "NSIT",
+        "group": "SP1500",
+        "rank": 98.6,
+        "change_5": 2.9,
+        "change_20": 0.8
+      },
+      {
+        "symbol": "PGNY",
+        "group": "SP1500",
+        "rank": 98.6,
+        "change_5": 1.3,
+        "change_20": 7.1
+      },
+      {
+        "symbol": "BBY",
+        "group": "SP1500",
+        "rank": 98.5,
+        "change_5": 0.9,
+        "change_20": 5.2
+      },
+      {
+        "symbol": "ELF",
+        "group": "SP1500",
+        "rank": 98.4,
+        "change_5": 1.3,
+        "change_20": 1.0
+      },
+      {
+        "symbol": "AMRX",
+        "group": "SP1500",
+        "rank": 98.4,
+        "change_5": 9.6,
+        "change_20": 6.7
+      }
+    ],
+    "ETF": [
+      {
+        "symbol": "MRNY",
+        "group": "ETF",
+        "rank": 100.0,
+        "change_5": 0.0,
+        "change_20": 0.0
+      },
+      {
+        "symbol": "BWET",
+        "group": "ETF",
+        "rank": 100.0,
+        "change_5": 0.0,
+        "change_20": 0.0
+      },
+      {
+        "symbol": "ZCSH",
+        "group": "ETF",
+        "rank": 99.9,
+        "change_5": 0.0,
+        "change_20": 0.0
+      },
+      {
+        "symbol": "SNOY",
+        "group": "ETF",
+        "rank": 99.9,
+        "change_5": 0.6,
+        "change_20": 0.0
+      },
+      {
+        "symbol": "AMDW",
+        "group": "ETF",
+        "rank": 99.9,
+        "change_5": 97.9,
+        "change_20": 0.0
+      },
+      {
+        "symbol": "SAPH",
+        "group": "ETF",
+        "rank": 99.9,
+        "change_5": 0.0,
+        "change_20": 0.9
+      },
+      {
+        "symbol": "AMDY",
+        "group": "ETF",
+        "rank": 99.8,
+        "change_5": 95.8,
+        "change_20": 0.0
+      },
+      {
+        "symbol": "BBH",
+        "group": "ETF",
+        "rank": 99.8,
+        "change_5": 0.0,
+        "change_20": 1.0
+      },
+      {
+        "symbol": "RSPH",
+        "group": "ETF",
+        "rank": 99.8,
+        "change_5": -0.1,
+        "change_20": 1.1
+      },
+      {
+        "symbol": "IDNA",
+        "group": "ETF",
+        "rank": 99.8,
+        "change_5": -0.1,
+        "change_20": 0.4
+      },
+      {
+        "symbol": "BRKW",
+        "group": "ETF",
+        "rank": 99.7,
+        "change_5": 0.1,
+        "change_20": 5.3
+      },
+      {
+        "symbol": "ARKG",
+        "group": "ETF",
+        "rank": 99.7,
+        "change_5": 0.4,
+        "change_20": 0.0
+      },
+      {
+        "symbol": "XLV",
+        "group": "ETF",
+        "rank": 99.7,
+        "change_5": 0.0,
+        "change_20": 1.9
+      },
+      {
+        "symbol": "BUG",
+        "group": "ETF",
+        "rank": 99.7,
+        "change_5": 0.4,
+        "change_20": -0.1
+      },
+      {
+        "symbol": "FMED",
+        "group": "ETF",
+        "rank": 99.6,
+        "change_5": 1.8,
+        "change_20": 3.8
+      },
+      {
+        "symbol": "BMED",
+        "group": "ETF",
+        "rank": 99.6,
+        "change_5": 0.0,
+        "change_20": 2.2
+      },
+      {
+        "symbol": "WCLD",
+        "group": "ETF",
+        "rank": 99.6,
+        "change_5": 0.2,
+        "change_20": -0.2
+      },
+      {
+        "symbol": "FTXH",
+        "group": "ETF",
+        "rank": 99.6,
+        "change_5": 0.2,
+        "change_20": 2.1
+      },
+      {
+        "symbol": "WCBR",
+        "group": "ETF",
+        "rank": 99.5,
+        "change_5": 0.3,
+        "change_20": -0.4
+      },
+      {
+        "symbol": "IYH",
+        "group": "ETF",
+        "rank": 99.5,
+        "change_5": -0.2,
+        "change_20": 2.0
+      },
+      {
+        "symbol": "EKG",
+        "group": "ETF",
+        "rank": 99.5,
+        "change_5": -0.4,
+        "change_20": 0.3
+      },
+      {
+        "symbol": "IHE",
+        "group": "ETF",
+        "rank": 99.5,
+        "change_5": 0.7,
+        "change_20": 6.7
+      },
+      {
+        "symbol": "FHLC",
+        "group": "ETF",
+        "rank": 99.4,
+        "change_5": -0.1,
+        "change_20": 2.0
+      },
+      {
+        "symbol": "VHT",
+        "group": "ETF",
+        "rank": 99.4,
+        "change_5": -0.1,
+        "change_20": 2.0
+      },
+      {
+        "symbol": "PSCH",
+        "group": "ETF",
+        "rank": 99.4,
+        "change_5": 0.3,
+        "change_20": 4.5
+      }
+    ],
+    "LEVERAGED_ETF": [
+      {
+        "symbol": "UNX",
+        "group": "LEVERAGED_ETF",
+        "rank": 100.0,
+        "change_5": 0.2,
+        "change_20": 3.2
+      },
+      {
+        "symbol": "CURE",
+        "group": "LEVERAGED_ETF",
+        "rank": 99.8,
+        "change_5": 0.3,
+        "change_20": 4.2
+      },
+      {
+        "symbol": "ELIL",
+        "group": "LEVERAGED_ETF",
+        "rank": 99.5,
+        "change_5": 0.4,
+        "change_20": 4.1
+      },
+      {
+        "symbol": "SNOU",
+        "group": "LEVERAGED_ETF",
+        "rank": 99.3,
+        "change_5": 1.6,
+        "change_20": -0.7
+      },
+      {
+        "symbol": "LLYX",
+        "group": "LEVERAGED_ETF",
+        "rank": 99.1,
+        "change_5": 0.2,
+        "change_20": 3.9
+      },
+      {
+        "symbol": "TBXU",
+        "group": "LEVERAGED_ETF",
+        "rank": 98.9,
+        "change_5": 0.5,
+        "change_20": 12.4
+      },
+      {
+        "symbol": "NVD",
+        "group": "LEVERAGED_ETF",
+        "rank": 98.6,
+        "change_5": 5.4,
+        "change_20": 69.2
+      },
+      {
+        "symbol": "RXL",
+        "group": "LEVERAGED_ETF",
+        "rank": 98.4,
+        "change_5": -0.2,
+        "change_20": 7.8
+      },
+      {
+        "symbol": "ZSL",
+        "group": "LEVERAGED_ETF",
+        "rank": 98.2,
+        "change_5": 0.0,
+        "change_20": 10.4
+      },
+      {
+        "symbol": "ANEL",
+        "group": "LEVERAGED_ETF",
+        "rank": 98.0,
+        "change_5": 62.9,
+        "change_20": 47.8
+      },
+      {
+        "symbol": "BRKU",
+        "group": "LEVERAGED_ETF",
+        "rank": 97.7,
+        "change_5": -0.3,
+        "change_20": 13.1
+      },
+      {
+        "symbol": "NVDQ",
+        "group": "LEVERAGED_ETF",
+        "rank": 97.5,
+        "change_5": 6.8,
+        "change_20": 70.4
+      },
+      {
+        "symbol": "TEMT",
+        "group": "LEVERAGED_ETF",
+        "rank": 97.3,
+        "change_5": 18.3,
+        "change_20": 42.7
+      },
+      {
+        "symbol": "NVDS",
+        "group": "LEVERAGED_ETF",
+        "rank": 97.0,
+        "change_5": 5.2,
+        "change_20": 61.0
+      },
+      {
+        "symbol": "CRWL",
+        "group": "LEVERAGED_ETF",
+        "rank": 96.8,
+        "change_5": 0.4,
+        "change_20": -3.0
+      },
+      {
+        "symbol": "NVDD",
+        "group": "LEVERAGED_ETF",
+        "rank": 96.6,
+        "change_5": 5.2,
+        "change_20": 46.6
+      },
+      {
+        "symbol": "BIB",
+        "group": "LEVERAGED_ETF",
+        "rank": 96.4,
+        "change_5": 2.5,
+        "change_20": 9.7
+      },
+      {
+        "symbol": "NFXS",
+        "group": "LEVERAGED_ETF",
+        "rank": 96.1,
+        "change_5": 2.4,
+        "change_20": 8.0
+      },
+      {
+        "symbol": "FAS",
+        "group": "LEVERAGED_ETF",
+        "rank": 95.9,
+        "change_5": 1.8,
+        "change_20": 24.8
+      },
+      {
+        "symbol": "AAPB",
+        "group": "LEVERAGED_ETF",
+        "rank": 95.7,
+        "change_5": 2.9,
+        "change_20": 3.3
+      },
+      {
+        "symbol": "AAPU",
+        "group": "LEVERAGED_ETF",
+        "rank": 95.5,
+        "change_5": 3.0,
+        "change_20": 4.0
+      },
+      {
+        "symbol": "GLL",
+        "group": "LEVERAGED_ETF",
+        "rank": 95.2,
+        "change_5": 7.9,
+        "change_20": 9.7
+      },
+      {
+        "symbol": "AMUU",
+        "group": "LEVERAGED_ETF",
+        "rank": 95.0,
+        "change_5": 76.7,
+        "change_20": -3.8
+      },
+      {
+        "symbol": "PILL",
+        "group": "LEVERAGED_ETF",
+        "rank": 94.8,
+        "change_5": 36.4,
+        "change_20": 45.5
+      },
+      {
+        "symbol": "DULL",
+        "group": "LEVERAGED_ETF",
+        "rank": 94.6,
+        "change_5": 11.8,
+        "change_20": 13.6
+      }
+    ]
+  }
+}
